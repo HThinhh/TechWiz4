@@ -9,17 +9,39 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
     <!-- <script src="../asset/js/angular-route.js"></script> -->
     <script src="../asset/js/angular.min.js"></script>
+    <link rel="stylesheet" href="../asset/css/header.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
 </head>
 
 <body ng-app="myApp">
-    <p>
+    <header >
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="logo">
+                        <img src="../asset/images/logo1.jpg" alt="logo">        
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9 text-end">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#/!">Home</a></li>
+                            <li><a href="#!/plantcategory">Plant Category</a></li>
+                            <li> <a href="#!/feedback">FeedBack</a></li>
+                            <li><a href="#!/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <p>
         <a href="#/!">Home</a>
         <a href="#!/plantcategory">Plant Category</a>
         <a href="#!/feedback">FeedBack</a>
         <a href="#!/contact">Contact</a>
         <a href="#!/"></a>
-    </p>
+    </p> -->
 
     <div ng-view></div>
 
