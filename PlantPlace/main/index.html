@@ -6,32 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlantPalace</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- <script src="../../script/angular.min.js"></script> -->
+    <!-- <script src="../../script/angular-route.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+
+    <link rel="stylesheet" href="../asset/css/footer.css"/>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
     <!-- <script src="../asset/js/angular-route.js"></script> -->
     <script src="../asset/js/angular.min.js"></script>
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../asset/css/contact.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
 </head>
 
 <body ng-app="myApp">
-
-    <p>
+    <header >
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-3">
+                    <div class="logo">
+                        <img src="../asset/image/logo1.png" alt="logo">        
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-9 text-end">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#/!">Home</a></li>
+                            <li><a href="#!/plantcategory">Plant Category</a></li>
+                            <li> <a href="#!/feedback">FeedBack</a></li>
+                            <li><a href="#!/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <p>
         <a href="#/!">Home</a>
         <a href="#!/plantcategory">Plant Category</a>
 
         <a href="#!/feedback">FeedBack</a>
         <a href="#!/contact">Contact</a>
         <a href="#!/"></a>
-    </p>
+    </p>-->
 
     
-    <div ng-view></div>
+    <div ng-view style="padding-bottom: 10px;padding-top: 10px; padding-left: 10px;"></div>
 
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function ($routeProvider) {
+        app.config(function ($routeProvider) {  
             $routeProvider
                 .when("/", {
                     templateUrl: "homepage.html"
@@ -47,55 +75,46 @@
                 });
         });
     </script>
-<script src="../asset/js/angular-route.js"></script>
-<!-- <script src="../asset/js/angular.min.js"></script> -->
 
-    <footer class="footer reveal">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>BUYER PROTECTION</h4>
-                    <ul>
-                        <li><a href="#">PlantPalace guaranteed</a></li>
-                        <li><a href="#">Bespoke personal assistance</a></li>
-                        <li><a href="#">Transaction security</a></li>
-                        <li><a href="#">Technical and aeshetic evaluation</a></li>
-                        <li><a href="#">Verified partners and dealers</a></li>
-                        <li><a href="#">warranty and extended warranty</a></li>
-                        <li><a href="#">Safe delivery</a></li>
-                        <li><a href="#">Pre-delivery</a></li>
-                        <li><a href="#">WE deliver your car "Ready to go"</a></li>
-                        <li><a href="#">After-sales services</a></li>
+    <footer class="page-footer shadow">
+        <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div>
+                    <img alt="logo" src="../asset/image/logo1.png"/>
+                    <p class="my-3 magin" style="width: 400px">
+                        If you plant a tree, you plant a life.
+                    </p>
+                </div>
+                <div>
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;">PlantPalace</p>
+                    <ul class="p-0" style="list-style: none; cursor: pointer">
+                        <li class="my-2">
+                            <a class="text-dark magin" href="/">Home</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-dark magin" href="/">PlantCategory</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-dark magin" href="/">FeedBack</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-dark magin" href="/">Contact</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>LEGAL & ASSISTANCE INFORMATION</h4>
-                    <ul>
-                        <li><a href="#">Impressum</a></li>
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">presonal data protection</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-                        <li><a href="#">Glossary</a></li>
-
+                <div>
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;">Contact Info</p>
+                    <ul class="p-0" style="list-style: none; cursor: pointer">
+                        <li class="my-2">
+                            <p class="magin">So 1, Ly Tu Trong, Ninh Kieu, Can Tho, Viet Nam</p>
+                        </li>
+                        <li class="my-2">
+                            <p class="magin">cantho@cusc.ctu.edu.vn</p>
+                        </li>
+                        <li class="my-2">
+                            <p class="magin">094-864-1565</p>
+                        </li>
                     </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>ADVANTAGES & BENEFITS</h4>
-                    <ul>
-                        <li><a href="#">Used cars with warranty</a></li>
-                        <li><a href="#">New cars with short delivery time</a></li>
-                        <li><a href="#">Any car of your choice securely traded</a></li>
-                        <li><a href="#">Extended warranty for your car</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>FOLLOW </h4>
-                    <div class="footer__icon-box">
-                        <a href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
-                        <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
-                        <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in footer-icon"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
