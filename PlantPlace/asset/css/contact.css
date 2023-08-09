@@ -9,8 +9,14 @@ img {
 .contact--thumbnail {
     position: relative;
     z-index: 1;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2%;
 }
+
+.contact--thumbnail img {
+    border-radius: 2%;
+}
+
 @media only screen and (max-width: 767px) {
     .contact--thumbnail {
     margin-bottom: 100px; } 
