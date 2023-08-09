@@ -10,13 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 </head>
 
-<body>
-    <p>
-        <a href="#/">Home</a>
-        <a href="#!/plantcategory">Plant Category</a>
-        <a href="#!/feedback.html">FeedBack</a>
-        <a href="#!/contact.html">Contact</a>
-    </p>
+<body ng-app="myApp">
+
+    <a href="#/!">Home</a>
+    <a href="#!/plantcategory">Plant Category</a>
+    <a href="#!/feedback">FeedBack</a>
+    <a href="#!/contact">Contact</a>
 
     <div ng-view></div>
 
@@ -25,7 +24,7 @@
         app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: ""
+                    templateUrl: "index.html"
                 })
                 .when("/plantcategory", {
                     templateUrl: "plant-categories.html"
