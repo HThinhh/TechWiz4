@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlantPalace</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- <script src="../../script/angular.min.js"></script> -->
+    <!-- <script src="../../script/angular-route.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 </head>
 
 <body ng-app="myApp">
     <p>
-        <a href="#/">Home</a>
-        <a href="#!plantcategory">Plant Category</a>
-        <a href="#!feedback.html">FeedBack</a>
-        <a href="#!contact.html">Contact</a>
+        <a href="#/!">Home</a>
+        <a href="#!/plantcategory">Plant Category</a>
+        <a href="#!/feedback">FeedBack</a>
+        <a href="#!/contact">Contact</a>
     </p>
 
     <div ng-view></div>
@@ -25,7 +27,7 @@
         app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: "contact.html"
+                    templateUrl: "/"
                 })
                 .when("/plantcategory", {
                     templateUrl: "plant-categories.html"
