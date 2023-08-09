@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPalace</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+
+<body>
+    <p>
+        <a href="#/">Home</a>
+        <a href="#!/plantcategory">Plant Category</a>
+        <a href="#!/feedback.html">FeedBack</a>
+        <a href="#!/contact.html">Contact</a>
+    </p>
+
+    <div ng-view></div>
+
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "index.html"
+                })
+                .when("/plantcategory", {
+                    templateUrl: "<h1>aaaaaaaa</h1>"
+                })
+                .when("/green", {
+                    templateUrl: "green.htm"
+                })
+                .when("/blue", {
+                    templateUrl: "blue.htm"
+                });
+        });
+    </script>
+</body>
+
+</html>
