@@ -1,12 +1,28 @@
+
 header {
   padding: 12px;
-  background-color: rgb(77, 218, 86);
+  /* background-color: rgb(57, 216, 68); */
   color: black;
 }
-
-.menu {}
-
-.menu ul {
+.x{
+  padding: 0%;
+}
+.itemdropdown{
+  background-color: rgb(81, 192, 58);
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  min-width: 160px;
+}
+.itemdropdown:hover{
+  background-color: rgb(81, 192, 58);
+  color: white;
+}
+body{
+  background-color: rgb(201, 246, 192);
+  font-size: 18px;
+}
+.menu ul{
   padding: 0;
   margin: 0;
 }
@@ -22,6 +38,21 @@ header {
 .a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(255, 255, 0);
+  color: rgb(255, 0, 0);
   font-weight: bold;
+}
+.active{
+  color: rgb(255, 255, 255);
+}
+.btn-menu{
+  background-color: rgb(31, 183, 43);
+  font-weight: bold;
+  font-size: 18px;
+}
+.input-search{
+  font-size: 18px;
+  height: 50px;
+}
+.a:hover{
+  color: rgb(255, 255, 255);
 }
