@@ -17,17 +17,18 @@
     <!-- <script src="../asset/js/angular-route.js"></script> -->
     <script src="../asset/js/angular.min.js"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../asset/css/footer.css"/>
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/css/footer.css" />
     <link rel="stylesheet" href="../asset/css/header.css">
     <link rel="stylesheet" href="../asset/css/contact.css">
+    <link rel="stylesheet" href="../asset/css/homepage.css">
     <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 <body ng-app="myApp">
-    <header >
+    <header>
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -51,10 +52,10 @@
                     <button class="btn btn-menu">Search</button>
                   </form>
                 </li>
-                <li class="nav-item"><button class="btn btn-menu"><a class="nav-link a"  href="#!/feedback">Cart</a></button></li>
+                <li class="nav-item"><button class="btn btn-menu"><a class="nav-link a"  href="#!/cart">Cart</a></button></li>
               </ul>
             </div>
-          </nav>
+        </nav>
     </header>
     <!-- <p>
         <a href="#/!">Home</a>
@@ -69,7 +70,7 @@
     <div ng-view style="padding-top: 10px;"></div>
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function ($routeProvider) {  
+        app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", {
                     templateUrl: "homepage.html"
@@ -79,6 +80,9 @@
                 })
                 .when("/feedback", {
                     templateUrl: "feedback.html"
+                })
+                .when("/cart", {
+                    templateUrl: "cart.html"
                 })
                 .when("/contact", {
                     templateUrl: "contact.html"
@@ -90,13 +94,14 @@
         <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
             <div class="d-flex flex-wrap justify-content-between">
                 <div>
-                    <img alt="logo" src="../asset/image/logo1.png"/>
+                    <img alt="logo" src="../asset/image/logo1.png" />
                     <p class="my-3 magin" style="width: 300px">
                         If you plant a tree, you plant a life.
                     </p>
                 </div>
                 <div>
-                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px; color: rgb(51, 187, 88);">PlantPalace</p>
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px; color: rgb(51, 187, 88);">PlantPalace
+                    </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
                             <a class="text-dark magin" href="/">Home</a>
@@ -113,10 +118,11 @@
                     </ul>
                 </div>
                 <div>
-                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Contact Info</p>
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Contact Info
+                    </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
-                            <p class="magin">So 1, Ly Tu Trong, Ninh Kieu, Can Tho, Viet Nam</p>
+                            <p class="magin">No. 1 Ly Tu Trong Street, Ninh Kieu, Can Tho, Viet Nam</p>
                         </li>
                         <li class="my-2">
                             <p class="magin">cantho@cusc.ctu.edu.vn</p>
@@ -130,8 +136,9 @@
         </div>
     </footer>
 </body>
-    <script src="../asset/js/angular-route.js"></script>
-    <script src="../asset/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../asset/jquery/jquery-2.2.4.min.js"></script>
-    <!-- <script src="../asset/js/angular.min.js"></script> -->
+<script src="../asset/js/angular-route.js"></script>
+<script src="../asset/bootstrap/js/bootstrap.min.js"></script>
+<script src="../asset/jquery/jquery-2.2.4.min.js"></script>
+<!-- <script src="../asset/js/angular.min.js"></script> -->
+
 </html>
