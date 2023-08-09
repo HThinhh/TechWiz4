@@ -17,16 +17,24 @@
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
 
     <link rel="stylesheet" href="../asset/css/footer.css"/>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+    <!-- <script src="../asset/js/angular-route.js"></script> -->
+    <script src="../asset/js/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
 </head>
 
 <body ng-app="myApp">
+
     <p>
         <a href="#/!">Home</a>
         <a href="#!/plantcategory">Plant Category</a>
+
         <a href="#!/feedback">FeedBack</a>
         <a href="#!/contact">Contact</a>
+        <a href="#!/"></a>
     </p>
 
+    
     <div ng-view></div>
 
     <script>
@@ -34,7 +42,7 @@
         app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: "/"
+                    templateUrl: "homepage.html"
                 })
                 .when("/plantcategory", {
                     templateUrl: "plant-categories.html"
@@ -92,5 +100,6 @@
         </div>
     </footer>
 </body>
-
+    <script src="../asset/js/angular-route.js"></script>
+    <!-- <script src="../asset/js/angular.min.js"></script> -->
 </html>
