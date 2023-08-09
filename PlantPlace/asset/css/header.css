@@ -50,8 +50,20 @@ body{
   font-size: 18px;
 }
 .input-search{
-  font-size: 18px;
   height: 50px;
+  background-color: #ffffff;
+  font-size: 18px;
+  border: 2px solid #70c745;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-weight: 400;
+  color: #005710;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; 
+}
+.input-search:focus{
+  box-shadow: none;
+  border-color: #005710; 
 }
 .a:hover{
   color: rgb(255, 255, 255);
