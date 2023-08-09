@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlantPalace</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <!-- <script src="../../script/angular.min.js"></script> -->
-    <!-- <script src="../../script/angular-route.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+    <!-- <script src="../asset/js/angular-route.js"></script> -->
+    <script src="../asset/js/angular.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
 </head>
 
 <body ng-app="myApp">
@@ -17,8 +17,10 @@
     <p>
         <a href="#/!">Home</a>
         <a href="#!/plantcategory">Plant Category</a>
+
         <a href="#!/feedback">FeedBack</a>
         <a href="#!/contact">Contact</a>
+        <a href="#!/"></a>
     </p>
 
     
@@ -29,7 +31,7 @@
         app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: "/"
+                    templateUrl: "homepage.html"
                 })
                 .when("/plantcategory", {
                     templateUrl: "plant-categories.html"
@@ -42,7 +44,8 @@
                 });
         });
     </script>
-
+<script src="../asset/js/angular-route.js"></script>
+<!-- <script src="../asset/js/angular.min.js"></script> -->
 
     <footer class="footer reveal">
         <div class="container">
@@ -50,12 +53,11 @@
                 <div class="footer-col">
                     <h4>BUYER PROTECTION</h4>
                     <ul>
-                        <li><a href="#">CARVAN guaranteed</a></li>
+                        <li><a href="#">PlantPalace guaranteed</a></li>
                         <li><a href="#">Bespoke personal assistance</a></li>
                         <li><a href="#">Transaction security</a></li>
                         <li><a href="#">Technical and aeshetic evaluation</a></li>
                         <li><a href="#">Verified partners and dealers</a></li>
-                        <li><a href="#">IOS 9001:2022 certified procedures</a></li>
                         <li><a href="#">warranty and extended warranty</a></li>
                         <li><a href="#">Safe delivery</a></li>
                         <li><a href="#">Pre-delivery</a></li>
@@ -81,7 +83,6 @@
                         <li><a href="#">New cars with short delivery time</a></li>
                         <li><a href="#">Any car of your choice securely traded</a></li>
                         <li><a href="#">Extended warranty for your car</a></li>
-
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -91,13 +92,12 @@
                         <a href="#"><i class="fab fa-twitter footer-icon"></i></a>
                         <a href="#"><i class="fab fa-instagram footer-icon"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in footer-icon"></i></a>
-
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
-
+    <script src="../asset/js/angular-route.js"></script>
+    <!-- <script src="../asset/js/angular.min.js"></script> -->
 </html>
