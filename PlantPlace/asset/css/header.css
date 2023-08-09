@@ -1,6 +1,6 @@
 header {
   padding: 12px;
-  background-color: rgb(57, 216, 68);
+  background-color: rgb(77, 218, 86);
   color: black;
 }
 
@@ -22,6 +22,6 @@ header {
 .a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 0);
   font-weight: bold;
 }
