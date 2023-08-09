@@ -38,12 +38,14 @@ body{
 .a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
-.active{
+
+.a.active {
   color: rgb(255, 255, 255);
 }
+
 .btn-menu{
   background-color: rgb(31, 183, 43);
   font-weight: bold;
