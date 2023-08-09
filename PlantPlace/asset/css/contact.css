@@ -36,7 +36,7 @@ img {
     font-size: 24px; } 
 }
 .section-heading p {
-    font-size: 16px;
+    font-size: 18px;
     color: #707070;
     margin-bottom: 0; 
 }
@@ -57,7 +57,7 @@ img {
     height: 45px;
     width: 100%;
     background-color: #ffffff;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 15px;
     border: 1px solid #e1e1e1;
     border-radius: 2px;
@@ -87,13 +87,13 @@ height: 80px;
     border: 2px solid #70c745;
     border-radius: 2px;
     padding: 0 20px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 42px;
     text-transform: uppercase;
     font-weight: 600; 
 }
 .alazea-btn.active, .alazea-btn:hover, .alazea-btn:focus {
-    font-size: 16px;
+    font-size: 18px;
     color: #70c745;
     font-weight: 600;
     background-color: transparent;
