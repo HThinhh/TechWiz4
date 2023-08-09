@@ -1,25 +1,24 @@
-header{
-    padding: 12px;
-    background-color: rgb(57, 216, 68);
-    color: black;
+header {
+  padding: 12px;
+  background-color: rgb(57, 216, 68);
+  color: black;
 }
-
-
 .menu ul{
   padding: 0;
   margin: 0;
 }
 
-.menu ul li{
-   list-style-type: none;
-   color: aliceblue;
-   display: inline-block;
-   font-size: 20px;
-   margin-left: 24px;
-  }
-.a{
+.menu ul li {
+  list-style-type: none;
+  color: aliceblue;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 24px;
+}
+
+.a {
   text-decoration: none;
   font-size: 18px;
-  color: yellow;
+  color: rgb(255, 0, 0);
   font-weight: bold;
 }

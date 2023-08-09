@@ -9,7 +9,6 @@
     <!-- <script src="../../script/angular.min.js"></script> -->
     <!-- <script src="../../script/angular-route.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
@@ -18,6 +17,7 @@
     <!-- <script src="../asset/js/angular-route.js"></script> -->
     <script src="../asset/js/angular.min.js"></script>
     <!-- CSS -->
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../asset/css/footer.css"/>
     <link rel="stylesheet" href="../asset/css/header.css">
     <link rel="stylesheet" href="../asset/css/contact.css">
@@ -28,25 +28,6 @@
 
 <body ng-app="myApp">
     <header >
-        <!-- <div class="container"> 
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-3">
-                    <div class="logo">
-                        <img src="../asset/image/logo1.png" alt="logo">        
-                    </div>
-                </div>
-                <div class="col-md-9 col-sm-9 col-9 text-end">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#/!">Home</a></li>
-                            <li><a href="#!/plantcategory">Plant Category</a></li>
-                            <li> <a href="#!/feedback">FeedBack</a></li>
-                            <li><a href="#!/contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -87,7 +68,6 @@
     
     <div ng-view style="padding-bottom: 10px;padding-top: 10px; padding-left: 10px;"></div>
 
-    
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {  
