@@ -29,6 +29,7 @@
     <!-- <script src="../asset/bootstrap/js/feedback.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body ng-app="myApp">
@@ -57,7 +58,12 @@
                         document.getElementById("itemdrop").style.display="none";
                     }
                 }
-
+                function hidedrop(){
+                    document.getElementById("itemdrop").style.display="none";
+                }
+                function showdrop(){
+                    document.getElementById("itemdrop").style.display="block";
+                }
                 // inform feedback
                 function mfun(){
                     alert("Feedback sent successfully, please message OK to exit");
@@ -66,19 +72,19 @@
                 function mycontact(){
                     alert("Thank you for contacting us, successful contact. Please text OK to exit");
                 }
+
             </script>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link a" href="#/!">Home</a>
                     <li>
                     <li class="nav-item dropdown x">
-                        <a class=" nav-link dropdown-toggle a" href="" role="button" onclick="changdrop()">Plant
+                        <a class=" nav-link dropdown-toggle a" href="" role="button" onmouseover="showdrop()" onclick="changdrop()">Plant
                             Category</a>
-                            
-                        <ul class="dropdown-menu" style="background-color: rgb(104,185,65); margin-top: 0;" id="itemdrop">
-                            <li><a class="dropdown-item itemdropdown" href="#!SucculentPlant">Succulent plants</a></li>
-                            <li><a class="dropdown-item itemdropdown" href="#!TreeTable">Tree to table</a></li>
-                            <li><a class="dropdown-item itemdropdown" href="#!GardenPlants">Garden plants</a></li>
+                        <ul class="dropdown-menu" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: 0;" id="itemdrop">
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()"  href="#!SucculentPlant">Succulent plants</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!TreeTable">Tree to table</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlants">Garden plants</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></li>
@@ -97,7 +103,15 @@
         </nav>
     </header>
     
+<<<<<<< HEAD
     <div ng-view class="bodymain" style="padding-top: 20px; padding-bottom: 20px;"></div>
+=======
+
+
+    <div ng-view class="bodymain" style="margin: 100px 0px 0px 0px;"></div>
+    <div class="aaa"></div>
+    
+>>>>>>> 56efb15f94e6bed70149baa27896026c5b1157dc
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
@@ -193,7 +207,7 @@
 </body>
 <script src="../asset/js/angular-route.js"></script>
 <script src="../asset/bootstrap/js/bootstrap.min.js"></script>
-<script src="../asset/jquery/jquery-2.2.4.min.js"></script>
+<script src="../asset/js/homepage.js"></script>
 <!-- <script src="../asset/fontawesome/fontawesome.min.js"></script> -->
 <!-- <script src="../asset/js/angular.min.js"></script> -->
 
