@@ -4,7 +4,7 @@
 }
 
 .btn-lg {
-    margin-top: 10px;
+    margin-top: 5%;
     margin-bottom: 10px;
     width: 30%;
     background-color: chartreuse;
@@ -16,10 +16,11 @@
 }
 
 .background-image{
+    margin-top: 110px;
     background-image: url("../image/backgound/Background-cay-xanh-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    /* height: 120vh; */
 }
 
 /* radio input */

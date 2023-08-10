@@ -1,0 +1,16 @@
+.content-one {
+    padding-left: 2rem;
+    font-size: 20px;
+}
+
+*{
+    font-size: 18px;
+}
+
+.content-body{
+    padding-left: 1rem;
+    font-style: italic;
+    color: cadetblue;
+    margin-bottom: 2%;
+}
+

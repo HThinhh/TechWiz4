@@ -5,13 +5,8 @@
         <div class="row align-items-center justify-content-between" style="padding-top: 5%">
             <div class="col-12 col-lg-5">
                 <h2>Feedback</h2>
-                <br />
-                <script>
-                    function mfun(){
-                        alert("aklsdas");
-                    }
-                </script>
-                <form action="#" id="fsend" onsubmit="mfun()">
+                <br/>
+                <form action="#!/feedback" onsubmit="mfun()">
                     <div class="radio-button">
                         <label>
                             <b>
@@ -19,46 +14,20 @@
                             </b>
                         </label>
                         <div>
-                            <input type="radio" id="radio1" name="radios" value="indoorplants" checked>
-                            <label for="radio1">Indoor plants</label>
+                            <input type="radio" id="radio1" name="radios" value="succulentPlant" checked>
+                            <label for="radio1">Succulent plants</label>
 
-                            <input type="radio" id="radio2" name="radios" value="outdoortree">
-                            <label for="radio2">Outdoor tree</label>
+                            <input type="radio" id="radio2" name="radios" value="treeToTable">
+                            <label for="radio2">Tree to table</label>
 
-                            <input type="radio" id="radio3" name="radios" value="outdoortree">
-                            <label for="radio3">Succulent plants</label>
+                            <input type="radio" id="radio3" name="radios" value="gardenPlants">
+                            <label for="radio3">Garden plants</label>
                         </div>
 
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <label>
-                                Which group of trees are you satisfied with when you come to us?
-                            </label>
-                            <div>
-                                <label class="radio-inline">
-                                    <input type="radio" name="experience" id="radio_experience" value="indoorplants"
-                                        required>
-                                    Indoor plants
-                                </label>
-                                <label></label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="experience" id="radio_experience" value="outdoortree"
-                                        required>
-                                    Outdoor tree
-                                </label>
-                                <label></label>
-                                <label class="radio-inline">
-                                    <input type="radio" name="experience" id="radio_experience" value="succulentplants"
-                                        required>
-                                    Succulent plants
-                                </label>
-                            </div>
-                        </div>
-                    </div> -->
                     <br />
                     <div class="row">
-                        <div class="col-sm-6 form-group">
+                        <div class="col-sm-12 form-group">
                             <label for="name">
                                 <b>
                                     Customer Name:
@@ -67,7 +36,10 @@
                             <input type="text" class="form-control" id="name" name="name" required
                                 placeholder="Enter customer name">
                         </div>
-                        <div class="col-sm-6 form-group">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
                             <label for="email">
                                 <b>
                                     Email:
@@ -106,10 +78,4 @@
             </div>
         </div>
     </div>
-    <script src="../asset/bootstrap/js/toast.js"></script>
-    <script>
-        document.getElementById('fsend').addEventListener('submit', function(){
-            alert("Submit");
-        });
-    </script>
 </div>
