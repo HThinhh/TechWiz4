@@ -39,17 +39,17 @@
             </button>
             <script>
                 function changdisplay(){
-                    if(document.getElementById("navbarCollapse").style.display=="none"){
-                        document.getElementById("navbarCollapse").style.display="block";
-                    }else{
-                        document.getElementById("navbarCollapse").style.display="none";
+                    if (document.getElementById("navbarCollapse").style.display == "none") {
+                        document.getElementById("navbarCollapse").style.display = "block";
+                    } else {
+                        document.getElementById("navbarCollapse").style.display = "none";
                     }
                 }
-                function changdrop(){
-                    if(document.getElementById("itemdrop").style.display=="none"){
-                        document.getElementById("itemdrop").style.display="block";
-                    }else{
-                        document.getElementById("itemdrop").style.display="none";
+                function changdrop() {
+                    if (document.getElementById("itemdrop").style.display == "none") {
+                        document.getElementById("itemdrop").style.display = "block";
+                    } else {
+                        document.getElementById("itemdrop").style.display = "none";
                     }
                 }
                 function mfun(){
@@ -63,7 +63,7 @@
                     <li class="nav-item dropdown x">
                         <a class=" nav-link dropdown-toggle a" href="#" role="button" onclick="changdrop()">Plant
                             Category</a>
-                            
+
                         <ul class="dropdown-menu" style="background-color: rgb(104,185,65);" id="itemdrop">
                             <li><a class="dropdown-item itemdropdown" href="#!SucculentPlant">Succulent plants</a></li>
                             <li><a class="dropdown-item itemdropdown" href="#!TreeTable">Tree to table</a></li>
@@ -85,7 +85,7 @@
             </div>
         </nav>
     </header>
-    
+
 
 
     <div ng-view class="bodymain" style="padding-top: 20px; padding-bottom: 20px;"></div>
