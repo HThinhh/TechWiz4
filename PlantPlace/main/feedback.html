@@ -1,16 +1,16 @@
 <div class="background-image">
     <link rel="stylesheet" href="../asset/css/feedback.css" />
-    <script src="../asset/bootstrap/js/feedback.js"></script>
+
     <div class="container">
         <div class="row align-items-center justify-content-between" style="padding-top: 5%">
             <div class="col-12 col-lg-5">
                 <h2>Feedback</h2>
-                <br/>
-                <form action="#" id="send">
+                <br />
+                <form action="#" id="fsend">
                     <div class="radio-button">
                         <label>
                             <b>
-                                 Which group of trees are you satisfied with when you come to us?
+                                Which group of trees are you satisfied with when you come to us?
                             </b>
                         </label>
                         <div>
@@ -23,8 +23,8 @@
                             <input type="radio" id="radio3" name="radios" value="outdoortree">
                             <label for="radio3">Succulent plants</label>
                         </div>
-                        
-                      </div>
+
+                    </div>
                     <!-- <div class="row">
                         <div class="col-sm-12 form-group">
                             <label>
@@ -59,23 +59,25 @@
                                     Customer Name:
                                 </b>
                             </label>
-                            <input type="text" class="form-control" id="name" name="name" required placeholder="Enter customer name">
+                            <input type="text" class="form-control" id="name" name="name" required
+                                placeholder="Enter customer name">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <label for="email"> 
+                            <label for="email">
                                 <b>
                                     Email:
                                 </b>
                             </label>
-                            <input type="email" class="form-control" id="email" name="email" required placeholder="Enter email">
+                            <input type="email" class="form-control" id="email" name="email" required
+                                placeholder="Enter email">
                         </div>
                     </div>
                     <br />
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <label for="comments"> 
+                            <label for="comments">
                                 <b>
-                                   Comments: 
+                                    Comments:
                                 </b>
                             </label>
                             <textarea class="form-control" type="textarea" name="comments" id="comments"
@@ -84,7 +86,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group sub">
-                            <button type="submit"  class="btn btn-lg" onclick="alert('Submit success. Thank you!');"> Submit </button>
+                            <button type="submit" onclick="abc()" class="btn btn-lg"> Submit </button>
                         </div>
                     </div>
                 </form>
@@ -95,26 +97,19 @@
                     <h3>Error</h3> Sorry there was an error sending your form.
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <div>
-                    
-                </div>
-            </div>
         </div>
     </div>
     <script src="../asset/bootstrap/js/toast.js"></script>
     <script>
-        // document.getElementById('send').addEventListener('submit', (event) => {
-        //     toast({
-        //         title: 'Success',
-        //         message: 'Submit success. Thank you!',
-        //         type: 'success',
-        //         duration: 20000
-        //     });
-        //     event.preventDefault();
-        // })
-        function myFunction() {
-                alert("I am an alert box!");
-            }
+        document.getElementById('fsend').addEventListener('submit', (event) => {
+            toast({
+                title: 'Success',
+                message: 'Submit success. Thank you!',
+                type: 'success',
+                duration: 20000
+            });
+            event.preventDefault();
+        })
+        
     </script>
 </div>
