@@ -1,10 +1,16 @@
 header {
-  padding: 12px;
   /* background-color: rgb(57, 216, 68); */
   color: black;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.619);
+}
+body{
+  background-color: rgb(255, 255, 255);
 }
 header nav{
-  background-color: #ffffff94;
+  background-color: rgb(145, 247, 114);
+}
+footer{
+  background-color: rgb(145, 247, 114);
 }
 
 .bodymain{
@@ -49,7 +55,8 @@ body{
 .a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(121, 224, 77);
+  color: rgb(64, 124, 37);
+  /* color: rgb(121, 224, 77); */
   font-weight: bold;
   /* border-right: rgb(103, 190, 66) solid 3px; */
   margin: 5px;
@@ -84,7 +91,11 @@ body{
   color: rgb(255, 255, 255);
 }
 
-li:hover{
+/* li:hover{
+  background-color: rgb(104,185,65);
+  border-radius: 5px;
+} */
+.nav-item:hover{
   background-color: rgb(104,185,65);
   border-radius: 5px;
 }
