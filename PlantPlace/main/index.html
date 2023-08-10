@@ -17,13 +17,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../asset/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../asset/fontawesome/owl.carousel.min.css">
+    <link rel="stylesheet" href="../asset/css/plant-details.css">
     <link rel="stylesheet" href="../asset/css/footer.css" />
     <link rel="stylesheet" href="../asset/css/header.css">
     <link rel="stylesheet" href="../asset/css/contact.css">
     <link rel="stylesheet" href="../asset/css/homepage.css">
     <link rel="stylesheet" href="../asset/css/cart.css">
     <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../asset/bootstrap/js/feedback.js"></script>
+
+    <!-- <script src="../asset/bootstrap/js/feedback.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 <body ng-app="myApp">
@@ -52,8 +57,13 @@
                         document.getElementById("itemdrop").style.display="none";
                     }
                 }
+
+                // inform feedback
                 function mfun(){
-                    alert("akdkaksd");
+                    alert("Feedback sent successfully, please message OK to exit");
+                }
+                function mfun1(){
+                    alert("Contact sent successfully, please message OK to exit");
                 }
             </script>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
@@ -89,6 +99,7 @@
 
 
     <div ng-view class="bodymain" style="margin: 100px 20px 20px 5px;"></div>
+    
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
@@ -107,6 +118,9 @@
                 })
                 .when("/contact", {
                     templateUrl: "contact.html"
+                })
+                .when("/details",{
+                    templateUrl: "../other/plant-details.html"
                 });
         });
     </script>
@@ -115,26 +129,22 @@
         <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
             <div class="d-flex flex-wrap justify-content-between">
                 <div>
-                    <img alt="logo" src="../asset/image/logo1.png" />
-                    <p class="my-3 magin" style="width: 300px">
-                        If you plant a tree, you plant a life.
-                    </p>
-                </div>
-                <div>
                     <p class="h5 mb-4" style="font-weight: 800; font-size: 18px; color: rgb(51, 187, 88);">PlantPalace
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">Home</a>
+                            <a class="text-dark magin" href="#!/">Home</a>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">PlantCategory</a>
+                            <a class="text-dark magin" href="#">PlantPalace</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item itemdropdown" href="#">Link</a></li>
+                                <li><a class="dropdown-item itemdropdown" href="#">Another link</a></li>
+                                <li><a class="dropdown-item itemdropdown" href="#">A third link</a></li>
+                            </ul>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">FeedBack</a>
-                        </li>
-                        <li class="my-2">
-                            <a class="text-dark magin" href="/">Contact</a>
+                            <a class="text-dark magin" href="#!/cart">Cart</a>
                         </li>
                     </ul>
                 </div>
@@ -143,13 +153,37 @@
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
-                            <p class="magin">1 Ly Tu Trong Street, Ninh Kieu District, Can Tho City, Vietnam</p>
+                            <a class="text-dark magin" href="#!/feedback">FeedBack</a>
                         </li>
                         <li class="my-2">
-                            <p class="magin">cantho@cusc.ctu.edu.vn</p>
+                            <a class="text-dark magin" href="#!/contact">Contact</a>
                         </li>
                         <li class="my-2">
-                            <p class="magin">094-864-1565</p>
+                            <a class="text-dark magin" href="#!/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Address
+                    </p>
+                    <ul class="p-0" style="list-style: none; cursor: pointer">
+                        <li class="my-2">
+                            <p class="magin">
+                                <i class="fa-sharp fa-light fa-location-dot fa-beat" style="font-size:24px"></i>
+                                1 Ly Tu Trong Street, Ninh Kieu District, Can Tho City, Vietnam
+                            </p>
+                        </li>
+                        <li class="my-2">
+                            <a class="footer-lineLink magin" style="color: black;" href="mailto:cantho@cusc.ctu.edu.vn">
+                                <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                                cantho@cusc.ctu.edu.vn
+                            </a>
+                        </li>
+                        <li class="my-2">
+                            <a class="footer-lineLink magin" style="color: black;" href="tel:0948641565">
+                                <i class="fa fa-phone" style="font-size:24px"></i>
+                                094-864-1565
+                            </a>
                         </li>
                     </ul>
                 </div>

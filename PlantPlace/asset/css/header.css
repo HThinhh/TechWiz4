@@ -1,5 +1,3 @@
-
-
 header {
   padding: 12px;
   /* background-color: rgb(57, 216, 68); */
@@ -8,12 +6,15 @@ header {
 header nav{
   background-color: #ffffff94;
 }
+
 .bodymain{
   margin-top: 100px;
 }
+
 .x{
   padding: 0%;
 }
+
 .itemdropdown{
   background-color: rgb(104,185,65);
   font-size: 18px;

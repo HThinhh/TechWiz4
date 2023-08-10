@@ -5,13 +5,8 @@
         <div class="row align-items-center justify-content-between" style="padding-top: 5%">
             <div class="col-12 col-lg-5">
                 <h2>Feedback</h2>
-                <br />
-                <script>
-                    function mfun(){
-                        alert("aklsdas");
-                    }
-                </script>
-                <form action="#" id="fsend" onsubmit="mfun()">
+                <br/>
+                <form action="#!/feedback" onsubmit="mfun()">
                     <div class="radio-button">
                         <label>
                             <b>
@@ -58,7 +53,7 @@
                     </div> -->
                     <br />
                     <div class="row">
-                        <div class="col-sm-6 form-group">
+                        <div class="col-sm-12 form-group">
                             <label for="name">
                                 <b>
                                     Customer Name:
@@ -67,7 +62,10 @@
                             <input type="text" class="form-control" id="name" name="name" required
                                 placeholder="Enter customer name">
                         </div>
-                        <div class="col-sm-6 form-group">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
                             <label for="email">
                                 <b>
                                     Email:
@@ -111,5 +109,24 @@
         document.getElementById('fsend').addEventListener('submit', function(){
             alert("Submit");
         });
+    </script>
+
+    <!-- <script>
+        function myFunction() {
+          var txt;
+          if (confirm("Press a button!")) {
+            txt = "You pressed OK!";
+          } else {
+            txt = "You pressed Cancel!";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script> -->
+
+    <script>
+        function send(){
+            var arr = document.getElementsByTagName('input');
+            console.log(arr);
+        }
     </script>
 </div>
