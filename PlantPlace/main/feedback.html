@@ -6,7 +6,12 @@
             <div class="col-12 col-lg-5">
                 <h2>Feedback</h2>
                 <br />
-                <form action="#" id="fsend">
+                <script>
+                    function mfun(){
+                        alert("aklsdas");
+                    }
+                </script>
+                <form action="#" id="fsend" onsubmit="mfun()">
                     <div class="radio-button">
                         <label>
                             <b>
@@ -86,10 +91,12 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group sub">
-                            <input class="btn btn-lg" id="fsend" onclick="f()" type="button" value="Submit"/>
+                            <button type="submit" class="btn btn-lg"> Submit </button>
                         </div>
                     </div>
+                    
                 </form>
+                
                 <div id="success_message" style="width:100%; height:100%; display:none; ">
                     <h3>Posted your feedback successfully!</h3>
                 </div>
@@ -101,17 +108,8 @@
     </div>
     <script src="../asset/bootstrap/js/toast.js"></script>
     <script>
-        document.getElementById('fsend').addEventListener('submit', (event) => {
-            toast({
-                title: 'Success',
-                message: 'Submit success. Thank you!',
-                type: 'success',
-                duration: 20000
-            });
-            event.preventDefault();
-        })
-        function f() {
-            alert("ghhghg");
-        }
+        document.getElementById('fsend').addEventListener('submit', function(){
+            alert("Submit");
+        });
     </script>
 </div>
