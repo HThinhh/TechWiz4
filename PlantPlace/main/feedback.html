@@ -8,11 +8,12 @@
                 <img src="../asset/image/feedback/feedback.jpeg" alt="">
             </div>
         </div>
+        
         <div class="row" style="margin-top: 50px;">
             <div class="col-12 col-md-6">
                 <h2>Feedback</h2>
                 <br/>
-                <form action="#" id="send">
+                <form action="" id="send">
                     <div class="row">
                         <div class="col-sm-12 form-group">
                             <label>
@@ -60,7 +61,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group sub">
-                            <button type="submit" class="btn btn-lg"> Submit </button>
+                            <button type="submit"  class="btn btn-lg" onclick="alert('Submit success. Thank you!');"> Submit </button>
                         </div>
                     </div>
                 </form>
@@ -73,17 +74,19 @@
             </div>
         </div>
     </div>
-    <script src="./libary/toast-message/toast.js"></script>
+    <!-- <script src="./libary/toast-message/toast.js"></script> -->
     <script>
-        document.getElementById('send').addEventListener('submit', (event) => {
-
-            toast({
-                title: 'Success',
-                message: 'Submit success. Thank you!',
-                type: 'success',
-                duration: 20000
-            })
-            event.preventDefault();
-        })
+        // document.getElementById('send').addEventListener('submit', (event) => {
+        //     toast({
+        //         title: 'Success',
+        //         message: 'Submit success. Thank you!',
+        //         type: 'success',
+        //         duration: 20000
+        //     });
+        //     event.preventDefault();
+        // })
+        function myFunction() {
+                alert("I am an alert box!");
+            }
     </script>
 </div>
