@@ -88,6 +88,10 @@ li:hover{
   background-color: rgb(104,185,65);
   border-radius: 5px;
 }
+.fli:hover{
+  background-color: rgb(166, 168, 165);
+  border-radius: 5px;
+}
 .searchitem:hover{
   background-color: rgb(250, 250, 250);
 }
