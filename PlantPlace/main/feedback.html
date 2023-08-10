@@ -53,7 +53,7 @@
                     </div> -->
                     <br />
                     <div class="row">
-                        <div class="col-sm-6 form-group">
+                        <div class="col-sm-12 form-group">
                             <label for="name">
                                 <b>
                                     Customer Name:
@@ -62,7 +62,10 @@
                             <input type="text" class="form-control" id="name" name="name" required
                                 placeholder="Enter customer name">
                         </div>
-                        <div class="col-sm-6 form-group">
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
                             <label for="email">
                                 <b>
                                     Email:
@@ -86,7 +89,11 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group sub">
-                            <button type="submit" onclick="abc()" class="btn btn-lg"> Submit </button>
+                            <!-- <button type="button" class="btn btn-lg"> Submit </button> -->
+                            <!-- <input class="btn btn-lg" onclick="if(!(confirm('Are you sure you want to send your feedback?'))) return false" type="button" value="Submit"/> -->
+                            <input class="btn btn-lg" onclick="send()" type="button" value="Submit"/>
+                            <!-- <input name="btnGui" type="submit" class="Button" id="btnGui" value="Gởi góp ý" onClick="alert('Cảm ơn bạn đã gửi góp ý!')"> -->
+
                         </div>
                     </div>
                 </form>
@@ -102,14 +109,35 @@
     <script src="../asset/bootstrap/js/toast.js"></script>
     <script>
         document.getElementById('fsend').addEventListener('submit', (event) => {
-            toast({
-                title: 'Success',
-                message: 'Submit success. Thank you!',
-                type: 'success',
-                duration: 20000
-            });
-            event.preventDefault();
-        })
+
+            alert("hello");
+        //     toast({
+        //         title: 'Success',
+        //         message: 'Submit success. Thank you!',
+        //         type: 'success',
+        //         duration: 20000
+        //     });
+        //     event.preventDefault();
+         })
         
+    </script>
+
+    <!-- <script>
+        function myFunction() {
+          var txt;
+          if (confirm("Press a button!")) {
+            txt = "You pressed OK!";
+          } else {
+            txt = "You pressed Cancel!";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script> -->
+
+    <script>
+        function send(){
+            var arr = document.getElementsByTagName('input');
+            console.log(arr);
+        }
     </script>
 </div>

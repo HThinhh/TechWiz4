@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../asset/css/cart.css">
     <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../asset/bootstrap/js/feedback.js"></script>
+    <!-- <script src="../asset/bootstrap/js/feedback.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
@@ -73,7 +73,7 @@
     </p>-->
 
     
-    <div ng-view style="padding-top: 20px;"></div>
+    <div ng-view style="padding-top: 50px;"></div>
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
@@ -92,6 +92,9 @@
                 })
                 .when("/contact", {
                     templateUrl: "contact.html"
+                })
+                .when("/faq", {
+                    templateUrl: "faq.html"
                 });
         });
     </script>
@@ -110,16 +113,33 @@
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">Home</a>
+                            <a class="text-dark magin" href="#!/">Home</a>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">PlantCategory</a>
+                            <a class="text-dark magin" href="#">PlantPalace</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item itemdropdown" href="#">Link</a></li>
+                                <li><a class="dropdown-item itemdropdown" href="#">Another link</a></li>
+                                <li><a class="dropdown-item itemdropdown" href="#">A third link</a></li>
+                            </ul>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">FeedBack</a>
+                            <a class="text-dark magin" href="#!/cart">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Contact Info
+                    </p>
+                    <ul class="p-0" style="list-style: none; cursor: pointer">
+                        <li class="my-2">
+                            <a class="text-dark magin" href="#!/feedback">FeedBack</a>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark magin" href="/">Contact</a>
+                            <a class="text-dark magin" href="#!/contact">Contact</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-dark magin" href="#!/faq">FAQ</a>
                         </li>
                     </ul>
                 </div>
