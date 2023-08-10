@@ -45,15 +45,26 @@
                         document.getElementById("navbarCollapse").style.display="none";
                     }
                 }
+                function changdrop(){
+                    if(document.getElementById("itemdrop").style.display=="none"){
+                        document.getElementById("itemdrop").style.display="block";
+                    }else{
+                        document.getElementById("itemdrop").style.display="none";
+                    }
+                }
+                function mfun(){
+                    alert("akdkaksd");
+                }
             </script>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link a" href="#/!">Home</a>
                     <li>
                     <li class="nav-item dropdown x">
-                        <a class=" nav-link dropdown-toggle a" href="#" role="button" data-bs-toggle="dropdown">Plant
+                        <a class=" nav-link dropdown-toggle a" href="#" role="button" onclick="changdrop()">Plant
                             Category</a>
-                        <ul class="dropdown-menu" style="background-color: rgb(104,185,65);">
+                            
+                        <ul class="dropdown-menu" style="background-color: rgb(104,185,65);" id="itemdrop">
                             <li><a class="dropdown-item itemdropdown" href="#!SucculentPlant">Succulent plants</a></li>
                             <li><a class="dropdown-item itemdropdown" href="#!TreeTable">Tree to table</a></li>
                             <li><a class="dropdown-item itemdropdown" href="#!GardenPlants">Garden plants</a></li>
@@ -61,7 +72,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></button></li>
                     <li class="nav-item"><a class="nav-link a" href="#!/feedback">FeedBack</a></li>
-                    <li class="nav-item">
+                    <li class="nav-item searchitem">
                         <form class="d-flex">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search">
