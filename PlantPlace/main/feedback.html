@@ -84,7 +84,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group sub">
-                            <button type="submit" class="btn btn-lg"> Submit </button>
+                            <button type="submit"  class="btn btn-lg" onclick="alert('Submit success. Thank you!');"> Submit </button>
                         </div>
                     </div>
                 </form>
@@ -104,15 +104,17 @@
     </div>
     <script src="../asset/bootstrap/js/toast.js"></script>
     <script>
-        document.getElementById('send').addEventListener('submit', (event) => {
-
-            toast({
-                title: 'Success',
-                message: 'Submit success. Thank you!',
-                type: 'success',
-                duration: 20000
-            })
-            event.preventDefault();
-        })
+        // document.getElementById('send').addEventListener('submit', (event) => {
+        //     toast({
+        //         title: 'Success',
+        //         message: 'Submit success. Thank you!',
+        //         type: 'success',
+        //         duration: 20000
+        //     });
+        //     event.preventDefault();
+        // })
+        function myFunction() {
+                alert("I am an alert box!");
+            }
     </script>
 </div>
