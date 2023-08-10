@@ -57,7 +57,12 @@
                         document.getElementById("itemdrop").style.display="none";
                     }
                 }
-
+                function hidedrop(){
+                    document.getElementById("itemdrop").style.display="none";
+                }
+                function showdrop(){
+                    document.getElementById("itemdrop").style.display="block";
+                }
                 // inform feedback
                 function mfun(){
                     alert("Feedback sent successfully, please message OK to exit");
@@ -65,19 +70,19 @@
                 function mfun1(){
                     alert("Contact sent successfully, please message OK to exit");
                 }
+
             </script>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link a" href="#/!">Home</a>
                     <li>
                     <li class="nav-item dropdown x">
-                        <a class=" nav-link dropdown-toggle a" href="" role="button" onclick="changdrop()">Plant
+                        <a class=" nav-link dropdown-toggle a" href="" role="button" onmouseover="showdrop()" onclick="changdrop()">Plant
                             Category</a>
-                            
-                        <ul class="dropdown-menu" style="background-color: rgb(104,185,65); margin-top: 0;" id="itemdrop">
-                            <li><a class="dropdown-item itemdropdown" href="#!SucculentPlant">Succulent plants</a></li>
-                            <li><a class="dropdown-item itemdropdown" href="#!TreeTable">Tree to table</a></li>
-                            <li><a class="dropdown-item itemdropdown" href="#!GardenPlants">Garden plants</a></li>
+                        <ul class="dropdown-menu" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: 0;" id="itemdrop">
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()"  href="#!SucculentPlant">Succulent plants</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!TreeTable">Tree to table</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlants">Garden plants</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></button></li>
@@ -98,7 +103,7 @@
     
 
 
-    <div ng-view class="bodymain" style="margin: 100px 20px 20px 5px;"></div>
+    <div ng-view class="bodymain" style="margin: 100px 0px 0px 0px;"></div>
     
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
