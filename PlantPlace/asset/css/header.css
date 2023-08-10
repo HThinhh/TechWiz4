@@ -84,7 +84,7 @@ body{
   color: rgb(255, 255, 255);
 }
 
-li:hover{
+.nav-item:hover{
   background-color: rgb(104,185,65);
   border-radius: 5px;
 }
