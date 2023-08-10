@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../asset/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../asset/fontawesome/owl.carousel.min.css">
+    <link rel="stylesheet" href="../asset/css/plant-details.css">
     <link rel="stylesheet" href="../asset/css/footer.css" />
     <link rel="stylesheet" href="../asset/css/header.css">
     <link rel="stylesheet" href="../asset/css/contact.css">
@@ -33,7 +35,7 @@
     <header>
         <nav class="navbar navbar-expand-sm fixed-top">
             <a class="navbar-brand" href="#">
-                <img src="../asset/image/logo2.jpg" alt="Logo" style="width:190px;" class="rounded-circle ">
+                <img src="../asset/image/logo1.png" alt="Logo" style="width:190px; margin-left: 15px;">
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" onclick="changdisplay()">
                 <span class="navbar-toggler-icon">
@@ -41,39 +43,50 @@
                 </span>
             </button>
             <script>
-                // function changdisplay(){
-                //     if(document.getElementById("navbarCollapse").style.display=="none"){
-                //         document.getElementById("navbarCollapse").style.display="block";
-                //     }else{
-                //         document.getElementById("navbarCollapse").style.display="none";
-                //     }
-                // }
-                // function changdrop(){
-                //     if(document.getElementById("itemdrop").style.display=="none"){
-                //         document.getElementById("itemdrop").style.display="block";
-                //     }else{
-                //         document.getElementById("itemdrop").style.display="none";
-                //     }
-                // }
-                function mfun(){
-                    alert("akdkaksd");
+                function changdisplay(){
+                    if(document.getElementById("navbarCollapse").style.display=="none"){
+                        document.getElementById("navbarCollapse").style.display="block";
+                    }else{
+                        document.getElementById("navbarCollapse").style.display="none";
+                    }
                 }
+                function changdrop(){
+                    if(document.getElementById("itemdrop").style.display=="none"){
+                        document.getElementById("itemdrop").style.display="block";
+                    }else{
+                        document.getElementById("itemdrop").style.display="none";
+                    }
+                }
+                function hidedrop(){
+                    document.getElementById("itemdrop").style.display="none";
+                }
+                function showdrop(){
+                    document.getElementById("itemdrop").style.display="block";
+                }
+                // inform feedback
+                function mfun(){
+                    alert("Feedback sent successfully, please message OK to exit");
+                }
+
+                function mycontact(){
+                    alert("Thank you for contacting us, successful contact. Please text OK to exit");
+                }
+
             </script>
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link a" href="#/!">Home</a>
                     <li>
                     <li class="nav-item dropdown x">
-                        <a class=" nav-link dropdown-toggle a" href="#" role="button" onclick="changdrop()">Plant
+                        <a class=" nav-link dropdown-toggle a" href="" role="button" onmouseover="showdrop()" onclick="changdrop()">Plant
                             Category</a>
-                            
-                        <ul class="dropdown-menu" style="background-color: rgb(104,185,65);" id="itemdrop">
-                            <li><a class="dropdown-item itemdropdown" href="#!SucculentPlant">Succulent plants</a></li>
-                            <li><a class="dropdown-item itemdropdown" href="#!TreeTable">Tree to table</a></li>
-                            <li><a class="dropdown-item itemdropdown" href="#!GardenPlants">Garden plants</a></li>
+                        <ul class="dropdown-menu" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: 0;" id="itemdrop">
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()"  href="#!SucculentPlant">Succulent plants</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!TreeTable">Tree to table</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlants">Garden plants</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></button></li>
+                    <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link a" href="#!/feedback">FeedBack</a></li>
                     <li class="nav-item searchitem">
                         <form class="d-flex">
@@ -89,7 +102,10 @@
         </nav>
     </header>
     
-    <div ng-view class="bodymain" style="padding-top: 20px; padding-bottom: 20px;"></div>
+
+
+    <div ng-view class="bodymain" style="margin: 100px 0px 0px 0px;"></div>
+    
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
@@ -109,7 +125,10 @@
                 .when("/contact", {
                     templateUrl: "contact.html"
                 })
-                .when("/faq", {
+                .when("/details",{
+                    templateUrl: "../other/plant-details.html"
+                })
+                .when("/faq",{
                     templateUrl: "faq.html"
                 });
         });
@@ -119,19 +138,13 @@
         <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
             <div class="d-flex flex-wrap justify-content-between">
                 <div>
-                    <img alt="logo" src="../asset/image/logo1.png" />
-                    <p class="my-3 magin" style="width: 300px">
-                        If you plant a tree, you plant a life.
-                    </p>
-                </div>
-                <div>
                     <p class="h5 mb-4" style="font-weight: 800; font-size: 18px; color: rgb(51, 187, 88);">PlantPalace
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
-                        <li class="my-2">
+                        <li class="my-2 fli">
                             <a class="text-dark magin" href="#!/">Home</a>
                         </li>
-                        <li class="my-2">
+                        <li class="my-2 fli">
                             <a class="text-dark magin" href="#">PlantPalace</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item itemdropdown" href="#">Link</a></li>
@@ -139,7 +152,7 @@
                                 <li><a class="dropdown-item itemdropdown" href="#">A third link</a></li>
                             </ul>
                         </li>
-                        <li class="my-2">
+                        <li class="my-2 fli">
                             <a class="text-dark magin" href="#!/cart">Cart</a>
                         </li>
                     </ul>
@@ -148,29 +161,37 @@
                     <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Contact Info
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
-                        <li class="my-2">
+                        <li class="my-2 fli">
                             <a class="text-dark magin" href="#!/feedback">FeedBack</a>
                         </li>
-                        <li class="my-2">
+                        <li class="my-2 fli">
                             <a class="text-dark magin" href="#!/contact">Contact</a>
                         </li>
-                        <li class="my-2">
+                        <li class="my-2 fli">
                             <a class="text-dark magin" href="#!/faq">FAQ</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Contact Info
+                    <p class="h5 mb-4" style="font-weight: 800; font-size: 18px;color: rgb(51, 187, 88);">Address
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
-                        <li class="my-2">
-                            <p class="magin">1 Ly Tu Trong Street, Ninh Kieu District, Can Tho City, Vietnam</p>
+                        <li class="my-2 fli">
+                            <a class="footer-lineLink magin" style="color: black;" href="mailto:cantho@cusc.ctu.edu.vn">
+                                <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                                cantho@cusc.ctu.edu.vn
+                            </a>
                         </li>
-                        <li class="my-2">
-                            <p class="magin">cantho@cusc.ctu.edu.vn</p>
+                        <li class="my-2 fli">
+                            <a class="footer-lineLink magin" style="color: black;" href="tel:0948641565">
+                                <i class="fa fa-phone" style="font-size:24px"></i>
+                                094-864-1565
+                            </a>
                         </li>
-                        <li class="my-2">
-                            <p class="magin">094-864-1565</p>
+                        <li class="my-2 fli">
+                            <p class="magin" style="color: black;">
+                                1 Ly Tu Trong Street, Ninh Kieu District, Can Tho City, Vietnam
+                            </p>
                         </li>
                     </ul>
                 </div>
