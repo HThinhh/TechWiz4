@@ -47,9 +47,11 @@ body{
   /* border-right: rgb(103, 190, 66) solid 3px; */
   margin: 5px;
 }
-.active{
+
+.a.active {
   color: rgb(255, 255, 255);
 }
+
 .btn-menu{
   background-color: rgb(31, 183, 43);
   font-weight: bold;

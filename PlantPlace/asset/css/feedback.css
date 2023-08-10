@@ -1,15 +1,28 @@
 *{
     font-size: 18px;
+    color: black;
 }
 
 .btn-lg {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px 10px;
-    width: 100%;
-    background-color: #70c745;
+    width: 30%;
+    background-color: #CCFFFF;
+    text-align: center;
 }
 
 .btn-lg:hover{
-    background-color: white;
+    background-color: #70c745;
 }
+
+input:hover{
+    border: 0 orange;
+}
+
+.background-image{
+    background-image: url("../image/backgound/Background-cay-xanh-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+  
