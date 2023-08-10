@@ -11,10 +11,11 @@ header nav{
 }
 footer{
   background-color: rgb(145, 247, 114);
+  box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.619);
 }
 
 .bodymain{
-  margin-top: 100px;
+  margin-top: 0px;
   border: none;
 }
 
@@ -26,7 +27,7 @@ footer{
   background-color: rgb(104,185,65);
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: rgb(64, 124, 37);
   min-width: 160px;
   border-bottom: #70c745 solid 3px;
   

@@ -81,7 +81,7 @@
                     <li class="nav-item dropdown x" onmouseout="hidedrop()">
                         <a class=" nav-link dropdown-toggle a"  role="button" onmouseover="showdrop()" onclick="changdrop()">Plant
                             Category</a>
-                        <ul class="dropdown-menu"onmouseover="showdrop()" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: 0;" id="itemdrop">
+                        <ul class="dropdown-menu"onmouseover="showdrop()" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
                             <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()"  href="#!SucculentPlant">Succulent plants</a></li>
                             <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!TreeTable">Tree to table</a></li>
                             <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlants">Garden plants</a></li>
@@ -103,7 +103,8 @@
         </nav>
     </header>
     
-    <div ng-view class="bodymain" style="padding-top: 20px; padding-bottom: 20px;"></div>
+    <div ng-view class="bodymain" style="padding-top: 0px; padding-bottom: 20px;"></div>
+    
     <div class="aaa"></div>
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
