@@ -91,7 +91,7 @@
                         <ul class="dropdown-menu"onmouseover="showdrop()" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
                             <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()"  href="#!SucculentPlant">Succulent plants</a></li>
                             <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!TreeTable">Tree to table</a></li>
-                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlants">Garden plants</a></li>
+                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlant">Garden plants</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></li>
@@ -140,6 +140,15 @@
                 })
                 .when("/site-map",{
                     templateUrl: "site-map.html"
+                })
+                .when("/GardenPlant", {
+                    templateUrl: "GardenPlant.html"
+                })
+                .when("/SucculentPlant", {
+                    templateUrl: "SucculentPlant.html"
+                })
+                .when("/TreeTable", {
+                    templateUrl: "TreeTable.html"
                 });
         });
     </script>
