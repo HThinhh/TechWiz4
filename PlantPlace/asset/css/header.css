@@ -1,14 +1,21 @@
 header {
-  padding: 12px;
   /* background-color: rgb(57, 216, 68); */
   color: black;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.619);
+}
+body{
+  background-color: rgb(255, 255, 255);
 }
 header nav{
-  background-color: #ffffff94;
+  background-color: rgb(145, 247, 114);
+}
+footer{
+  background-color: rgb(145, 247, 114);
+  box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.619);
 }
 
 .bodymain{
-  margin-top: 100px;
+  margin-top: 0;
   border: none;
 }
 
@@ -20,7 +27,7 @@ header nav{
   background-color: rgb(104,185,65);
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: rgb(64, 124, 37);
   min-width: 160px;
   border-bottom: #70c745 solid 3px;
   
@@ -49,7 +56,8 @@ body{
 .a {
   text-decoration: none;
   font-size: 18px;
-  color: rgb(121, 224, 77);
+  color: rgb(64, 124, 37);
+  /* color: rgb(121, 224, 77); */
   font-weight: bold;
   /* border-right: rgb(103, 190, 66) solid 3px; */
   margin: 5px;
@@ -84,7 +92,7 @@ body{
   color: rgb(255, 255, 255);
 }
 
-li:hover{
+.nav-item:hover{
   background-color: rgb(104,185,65);
   border-radius: 5px;
 }
@@ -93,5 +101,19 @@ li:hover{
   border-radius: 5px;
 }
 .searchitem:hover{
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(145, 247, 114);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
 }

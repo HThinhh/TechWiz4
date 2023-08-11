@@ -1,20 +1,33 @@
 $(function () {
-	var images = [];
 	var file = "../asset/json/data.json";
 	$.getJSON(file, function (data) {
 		$.each(data, function (i, field) {
-			$("#products-list").append(field.ID + " " + field.Commonname + "<br/>");
-			images = field.Image;
-			$("#products-list").append("<img src=\"../asset/image/products/"+ images[1] + "\"> <br/>");
-		});	
+			var temp = '<div class="col-12 col-sm-6 col-lg-4">' 
+				+ '<div class="single-product-area mb-50">'
+				+ '<div class="product-img">'
+				+ '<a href="#!/details"><img src="../asset/image/products/'+ field.Image[1] +'" alt=""></a>'
+				+ '<!-- Product Tag -->'
+				+ '<div class="product-meta d-flex">'
+				+ '<a href="#!/cart" class="add-to-cart-btn">Add to cart</a>'
+				+ '</div>'
+				+ '</div>'
+				+ '<!-- Product Info -->'
+				+ '<div class="product-info mt-15 text-center">'
+				+ '<a href="#!/details">'
+				+ '<p>'+ field.Commonname+'</p>'
+				+ '</a>'
+				+ '<h6>$10.99</h6>'
+				+ '</div>'
+				+ '</div>'
+				+ '</div>';
+			$("#all-products").append(temp);
+		});
 		// generateAllProductsHTML(products);
 		// $$$(window).trigger('hashchange');
 	});
-});
-
-// $$$(window).on('hashchange', function(){
-// 	render(decodeURI(window.location.hash));
-// });
+	// $$$(window).on('hashchange', function(){
+	// 	render(decodeURI(window.location.hash));
+	// });
 // 	/* template */
 // 	function render(url) {
 // 		var temp = url.split('/')[0];
@@ -45,7 +58,7 @@ $(function () {
 // 			window.location.hash = 'product/' + productIndex;
 // 		})
 // 	}
-
+	
 // 	function renderProductsPage(data){
 // 		var page = $$$('.all-products'), p = $$$('.nonP'),
 // 			allProducts = $$$('.all-products .products-list > li');
@@ -64,13 +77,11 @@ $(function () {
 // 		page.addClass('visible');
 // 	}
 
-// 	function renderErrorPage(){
-// 		var page = $$$('.error'), footer = $$$('footer'),
-// 			headers = $$$('header'),
-// 			main = $$$('.main-content');
-// 		page.addClass('visible');
-// 		main.addClass('hidden');
-// 		headers.addClass('hidden');
-// 		footer.addClass('hidden');
-// 	}
-// });
+			if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+				product[i].style.display = "";
+			}else{
+				product[i].style.display = "none";
+			}
+		}
+	}
+ }
