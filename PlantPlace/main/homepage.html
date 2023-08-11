@@ -16,10 +16,12 @@
 				+ '</div>'
 				+ '<!-- Product Info -->'
 				+ '<div class="product-info mt-15 text-center">'
+				+ '<a href="#!/details?id='+field.ID+'">'
+				+ '<p>'+ field.Commonname+'</p>'
 				+ '<a href="#!/details">'
-				+ '<p>'+'<strong>'+ field.Commonname+'</strong>'+'</p>'
+				+ '<p style="font-size: 26px;">'+ field.Commonname+'</p>'
 				+ '</a>'
-				+ '<h6>'+'<dt>'+field.Price+'$<dt>'+'</h6>'
+				+ '<h4>$'+field.Price+'</h4>'
 				+ '</div>'
 				+ '</div>'
 				+ '</div>';
@@ -28,6 +30,8 @@
 
 	});
 });
+
+
 </script>
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -73,15 +77,15 @@
                         <p>Showing 1–9 of 72 results</p>
                     </div>
                     <!-- Search by name -->
-                    <form action="" class="search-form">
+                    <div class="search-form">
                         <i class="fa fa-search" aria-hidden="true"></i>
-                        <input type="text" name="" id="search-item" placeholder="Search..." onkeyup="search()">
-                    </form>
+                        <input type="text" name="" id="search-item" placeholder="Search..." onkeyup="search()" autocomplete="off">
+                    </div>
                     <!-- Search by Terms -->
                     <div class="search_by_terms">
                         <form action="#" method="post" class="form-inline">
                             <select class="custom-select widget-title">
-                                <option selected>Short by Popularity</option>
+                                <option selected>Sort by price</option>
                                 <option value="1">Short by Newest</option>
                                 <option value="2">Short by Sales</option>
                                 <option value="3">Short by Ratings</option>
