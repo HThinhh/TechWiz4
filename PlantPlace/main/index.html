@@ -92,6 +92,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link a" href="#!/feedback">FeedBack</a></li>
+
                     <li class="nav-item searchitem">
                         <!-- <form class="d-flex">
                             <div class="input-group">
@@ -101,16 +102,13 @@
                         </form> -->
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/cart">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link a" href="#!/site-map">Site Map</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     
-<<<<<<< HEAD
     <div ng-view class="bodymain"></div>
-=======
-    <div ng-view class="bodymain" style="padding-top: 20px; padding-bottom: 20px;" id="product-list"></div>
->>>>>>> 4f5c48a5670cbb80421c81969d2de8daa669e257
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
@@ -135,6 +133,9 @@
                 })
                 .when("/faq",{
                     templateUrl: "faq.html"
+                })
+                .when("/site-map",{
+                    templateUrl: "site-map.html"
                 });
         });
     </script>
