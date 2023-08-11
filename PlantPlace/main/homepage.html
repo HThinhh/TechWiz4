@@ -4,6 +4,7 @@
     $(function () {
 	var file = "asset/json/data.json";
 	$.getJSON(file, function (data) {
+        var d=0;
 		$.each(data, function (i, field) {
 			var temp = '<div class="product col-12 col-sm-6 col-lg-4">' 
 				+ '<div class="single-product-area mb-50">'
@@ -24,9 +25,10 @@
 				+ '</div>'
 				+ '</div>'
 				+ '</div>';
+            d++;
 			$("#all-products").append(temp);
 		});
-
+        $("#sl").append(d);
 	});
 });
 
@@ -73,7 +75,7 @@
                 <div class="shop-sorting-data d-flex flex-wrap align-items-center justify-content-between">
                     <!-- Shop Page Count -->
                     <div class="shop-page-count">
-                        <p>Showing 1–9 of 72 results</p>
+                        <p>Showing <span id="sl"></span> results</p>
                     </div>
                     <!-- Search by name -->
                     <div class="search-form">
