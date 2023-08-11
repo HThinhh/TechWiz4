@@ -4,6 +4,7 @@
     $(function () {
 	var file = "asset/json/data.json";
 	$.getJSON(file, function (data) {
+        var d=0;
 		$.each(data, function (i, field) {
 			var temp = '<div class="product col-12 col-sm-6 col-lg-4">' 
 				+ '<div class="single-product-area mb-50">'
@@ -24,9 +25,10 @@
 				+ '</div>'
 				+ '</div>'
 				+ '</div>';
+            d++;
 			$("#all-products").append(temp);
 		});
-
+        $("#sl").append(d);
 	});
 });
 
@@ -85,7 +87,7 @@
                 <div class="shop-sorting-data d-flex flex-wrap align-items-center justify-content-between">
                     <!-- Shop Page Count -->
                     <div class="shop-page-count">
-                        <p>Showing 1–9 of 72 results</p>
+                        <p>Showing <span id="sl"></span> results</p>
                     </div>
                     <!-- Search by name -->
                     <div class="search-form">
@@ -97,9 +99,9 @@
                         <form action="#" method="post" class="form-inline">
                             <select class="custom-select widget-title">
                                 <option selected>Sort by price</option>
-                                <option value="1">Short by Newest</option>
-                                <option value="2">Short by Sales</option>
-                                <option value="3">Short by Ratings</option>
+                                <option value="1">From $10.00 to $50.00</option>
+                                <option value="2">From $50.00 to $100.00</option>
+                                <option value="3">Over $100.00</option>
                             </select>
                         </form>
                     </div>
