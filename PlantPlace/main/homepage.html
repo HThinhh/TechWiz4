@@ -17,9 +17,9 @@
 				+ '<!-- Product Info -->'
 				+ '<div class="product-info mt-15 text-center">'
 				+ '<a href="#!/details">'
-				+ '<p>'+ field.Commonname+'</p>'
+				+ '<p style="font-size: 26px;">'+ field.Commonname+'</p>'
 				+ '</a>'
-				+ '<h6>$'+field.Price+'</h6>'
+				+ '<h4>$'+field.Price+'</h4>'
 				+ '</div>'
 				+ '</div>'
 				+ '</div>';
@@ -28,6 +28,8 @@
 
 	});
 });
+
+
 </script>
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -81,7 +83,7 @@
                     <div class="search_by_terms">
                         <form action="#" method="post" class="form-inline">
                             <select class="custom-select widget-title">
-                                <option selected>Short by Popularity</option>
+                                <option selected>Sort by price</option>
                                 <option value="1">Short by Newest</option>
                                 <option value="2">Short by Sales</option>
                                 <option value="3">Short by Ratings</option>
