@@ -2,7 +2,7 @@
     $(function () {
         var file = "asset/json/data.json";
         $.getJSON(file, function (data) {
-            var j = 0;
+            var j=0;
             $.each(data, function (i, field) {
                 var temp = '<div class="product col-12 col-sm-6 col-lg-4">'
                     + '<div class="single-product-area mb-50">'
@@ -22,12 +22,15 @@
                     + '</div>'
                     + '</div>'
                     + '</div>';
-                if (field.Type=="Succulent plants") {
-                    j=j+1;
+                if (field.Type=="Succulent plants"){
+                    j++;
                     $("#all-products").append(temp);
                 }
+                    
             });
-            $("#product-count").append("Have "+ j +" products");
+            $('#sl').append(j);
+            // generateAllProductsHTML(products);
+            // $$$(window).trigger('hashchange');
         });
     });
 </script>
@@ -93,7 +96,7 @@
                 <div class="shop-sorting-data d-flex flex-wrap align-items-center justify-content-between">
                     <!-- Shop Page Count -->
                     <div class="shop-page-count">
-                        <p id="product-count"></p>
+                        <p>Showing <span id="sl"></span> results</p>
                     </div>
                     <!-- Search by name -->
                     <form action="" class="search-form">
