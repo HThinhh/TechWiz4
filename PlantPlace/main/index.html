@@ -12,6 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script> -->
@@ -64,18 +65,18 @@
                         document.getElementById("itemdrop").style.display="none";
                     }
                 }
-                function hidedrop(){
-                    document.getElementById("itemdrop").style.display="none";
+                function hidedrop() {
+                    document.getElementById("itemdrop").style.display = "none";
                 }
-                function showdrop(){
-                    document.getElementById("itemdrop").style.display="block";
+                function showdrop() {
+                    document.getElementById("itemdrop").style.display = "block";
                 }
                 // inform feedback
-                function mfun(){
+                function mfun() {
                     alert("Feedback sent successfully, please message OK to exit");
                 }
 
-                function mycontact(){
+                function mycontact() {
                     alert("Thank you for contacting us, successful contact. Please text OK to exit");
                 }
 
@@ -110,9 +111,6 @@
             </div>
         </nav>
     </header>
-    <div id="aaa"></div>
-    <div id="bbb"></div>
-    <div ng-view class="bodymain" style="padding-top: 0px; padding-bottom: 20px;"></div>
     
 <<<<<<< HEAD
 
@@ -141,10 +139,10 @@
                 .when("/contact", {
                     templateUrl: "contact.html"
                 })
-                .when("/details",{
+                .when("/details", {
                     templateUrl: "../other/plant-details.html"
                 })
-                .when("/faq",{
+                .when("/faq", {
                     templateUrl: "faq.html"
                 })
                 .when("/site-map",{
@@ -219,10 +217,10 @@
         </div>
     </footer>
 </body>
+
+<!-- JavaScript -->
+<script src="../asset/js/homepage.js"></script>
 <script src="../asset/js/angular-route.js"></script>
 <script src="../asset/bootstrap/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-<!-- <script src="../asset/fontawesome/fontawesome.min.js"></script> -->
-<!-- <script src="../asset/js/angular.min.js"></script> -->
 
 </html>

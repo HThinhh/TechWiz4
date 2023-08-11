@@ -1,6 +1,7 @@
-*{
+* {
     font-size: 18px;
 }
+
 .carousel {
     padding: 0;
     background-color: #042f11;
@@ -355,7 +356,8 @@
     visibility: visible;
     opacity: 1;
 }
-.search-form{
+
+.search-form {
     height: 40px;
     background-color: #f5f5f5;
     border-radius: 2px;
@@ -365,7 +367,8 @@
     flex-direction: row;
     align-items: center;
 }
-.search-form input{
+
+.search-form input {
     background-color: #f5f5f5;
     border: none;
     outline: none;
@@ -374,6 +377,7 @@
     font-size: 18px;
     font-weight: 400;
 }
-.search-form i{
+
+.search-form i {
     padding: 0 10px;
 }
