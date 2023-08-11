@@ -95,23 +95,21 @@
                         <div class="shipping d-flex justify-content-between">
                             <h5>Shipping</h5>
                             <div class="shipping-address">
-                                <form action="#" method="post">
+                                <form action="#!/cart" onsubmit="updateTotal()">
                                     <select class="custom-select">
-                                      <option selected>City</option>
-                                      <option value="1">Tp.Can Tho</option>
+                                      <option value="1" selected>Tp.Can Tho</option>
                                       <option value="2">Tp.HCM</option>
                                       <option value="3">TP.An Giang</option>
                                       <option value="4">TP.Hau Giang</option>
                                     </select>
                                     <select class="custom-select">
-                                        <option selected>Delivery method</option>
-                                        <option value="1">Best Express</option>
+                                        <option value="1" selected>Best Express</option>
                                         <option value="2">GHN</option>
                                         <option value="3">GHTK</option>
                                         <option value="4">Viettel Post.</option>
                                       </select>
-                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address">
-                                    <button type="submit">Update Total</button>
+                                    <input type="text" name="shipping-zip" id="shipping-zip" placeholder="Address" required>
+                                    <button  type="submit">Update Total</button>
                                 </form>
                             </div>
                         </div>
