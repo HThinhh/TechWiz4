@@ -30,7 +30,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
-                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[4] +`" alt="banner5">
+                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[4] +`" alt="Banner5">
                                         </a>
                                     </div>
                         `);
@@ -51,7 +51,13 @@
                                         style="background-image: url(asset/image/products/`+ field.Image[4] +`);">
                                     </li>
                         `);
-
+                        $("#name-plant").append(field.Commonname);
+                        $("#price").append(field.Price);
+                        $("#description").append(field.Describe);
+                        $("#sciencename").append(field.Sciencename);
+                        $("#origin").append(field.Origin);
+                        $("#type").append(field.Type);
+                    
                 }
             });
         });
@@ -80,12 +86,17 @@
 
                     <div class="col-12 col-md-6">
                         <div class="single_product_desc">
-                            <h4 class="title">Recuerdos Plant</h4>
-                            <h4 class="price">$9.99</h4>
+                            <h4 class="title" id="name-plant">
+                                <!-- name -->
+                            </h4>
+                            <h4 class="price" id="price">
+                                <!-- price -->
+                            </h4>
+                            <script>
+
+                            </script>
                             <div class="short_overview">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellem malesuada
-                                    in nibh selama euismod. Curabitur a rhoncus dui. Nunc lobortis cursus magna utrum
-                                    faucibus. Vivamus justo nibh, pharetra non risus accumsan, tincidunt suscipit leo.
+                                <p id="description">
                                 </p>
                             </div>
 
@@ -109,9 +120,9 @@
                             </div>
 
                             <div class="products--meta">
-                                <p><span>SKU:</span> <span>CT201807</span></p>
-                                <p><span>Category:</span> <span>Outdoor Plants</span></p>
-                                <p><span>Tags:</span> <span>plants, green, cactus </span></p>
+                                <p><span>Science Name:</span> <span id="sciencename"></span></p>
+                                <p><span>Origin:</span> <span id="origin"></span></p>
+                                <p><span>Type:</span> <span id="type"> </span></p>
                                 <p>
                                     <span>Share on:</span>
                                     <span>
