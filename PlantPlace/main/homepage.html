@@ -97,6 +97,11 @@
                         <div class="shop-page-count">
                             <p>Showing 1–9 of 72 results</p>
                         </div>
+                        <!-- Search by Name -->
+                        <form class="search-form">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="text" id="search-item" placeholder="Search" onkeyup="search()">
+                        </form>
                         <!-- Search by Terms -->
                         <div class="search_by_terms">
                             <form action="#" method="post" class="form-inline">
@@ -259,11 +264,11 @@
 
                 <!-- All Products Area -->
                 <div class="col-12 col-md-8 col-lg-9">
-                    <div class="shop-products-area">
+                    <div class="shop-products-area" id="product-list">
                         <div class="row">
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -279,7 +284,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Cactus Flower</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -287,7 +292,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -299,7 +304,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Cactus Flower</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -307,7 +312,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -319,7 +324,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Cactus Flower</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -327,7 +332,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -339,7 +344,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Tulip Flower</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -347,7 +352,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -359,7 +364,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Tulip Flower</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -367,7 +372,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -379,7 +384,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Tulip Flower</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -387,7 +392,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -399,7 +404,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Recuerdos plant</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -407,7 +412,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -423,7 +428,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Recuerdos plant</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
@@ -431,7 +436,7 @@
                             </div>
 
                             <!-- Single Product Area -->
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="product col-12 col-sm-6 col-lg-4">
                                 <div class="single-product-area mb-50">
                                     <!-- Product Image -->
                                     <div class="product-img">
@@ -443,7 +448,7 @@
                                     <!-- Product Info -->
                                     <div class="product-info mt-15 text-center">
                                         <a href="#!/details">
-                                            <p>Cactus Flower</p>
+                                            <p id="product-name">Recuerdos plant</p>
                                         </a>
                                         <h6>$10.99</h6>
                                     </div>
