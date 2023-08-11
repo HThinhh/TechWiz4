@@ -3,7 +3,11 @@
     color: black;
 }
 
-.btn-lg {
+::placeholder{
+    font-size: 18px;
+}
+
+.btn-submit {
     margin-top: 5%;
     margin-bottom: 10px;
     width: 30%;
@@ -11,7 +15,7 @@
     text-align: center;
 }
 
-.btn-lg:hover{
+.btn-submit:hover{
     background-color:#CCFFFF;
 }
 

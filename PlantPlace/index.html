@@ -11,18 +11,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
     <script src="asset/js/angular.min.js"></script>
+    <script src="asset/js/homepage.js"></script>
 
 
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min./css" /> -->
+    <!-- <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="asset/fontawesome/font-awesome.min.css">
     <link rel="stylesheet" href="asset/fontawesome/owl.carousel.min.css">
     <link rel="stylesheet" href="asset/css/homepage.css">
@@ -46,21 +45,21 @@
                 <img src="asset/image/logo1.png" alt="Logo" style="width:190px; margin-left: 15px;">
             </a>
             <button type="button" class="navbar-toggler" style="align-items: center;" onclick="changdisplay()">
-                    <i class="bi bi-list" style="font-size: 30px;"></i>
+                <i class="bi bi-list" style="font-size: 30px;"></i>
             </button>
             <script>
-                function changdisplay(){
-                    if(document.getElementById("navbarCollapse").style.display=="none"){
-                        document.getElementById("navbarCollapse").style.display="block";
-                    }else{
-                        document.getElementById("navbarCollapse").style.display="none";
+                function changdisplay() {
+                    if (document.getElementById("navbarCollapse").style.display == "none") {
+                        document.getElementById("navbarCollapse").style.display = "block";
+                    } else {
+                        document.getElementById("navbarCollapse").style.display = "none";
                     }
                 }
-                function changdrop(){
-                    if(document.getElementById("itemdrop").style.display=="none"){
-                        document.getElementById("itemdrop").style.display="block";
-                    }else{
-                        document.getElementById("itemdrop").style.display="none";
+                function changdrop() {
+                    if (document.getElementById("itemdrop").style.display == "none") {
+                        document.getElementById("itemdrop").style.display = "block";
+                    } else {
+                        document.getElementById("itemdrop").style.display = "none";
                     }
                 }
                 function hidedrop() {
@@ -84,12 +83,17 @@
                     <li class="nav-item"><a class="nav-link a" href="#">Home</a>
                     <li>
                     <li class="nav-item dropdown x" onmouseout="hidedrop()">
-                        <a class=" nav-link dropdown-toggle a" style="color: rgb(64, 124, 37);" role="button" onmouseover="showdrop()" onclick="changdrop()">Plant
+                        <a class=" nav-link dropdown-toggle a" style="color: rgb(64, 124, 37);" role="button"
+                            onmouseover="showdrop()" onclick="changdrop()">Plant
                             Category</a>
-                        <ul class="dropdown-menu"onmouseover="showdrop()" onmouseout="hidedrop()" style="background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
-                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()"  href="#!SucculentPlant">Succulent plants</a></li>
-                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!TreeTable">Tree to table</a></li>
-                            <li><a class="dropdown-item itemdropdown"onmouseover="showdrop()" href="#!GardenPlants">Garden plants</a></li>
+                        <ul class="dropdown-menu" onmouseover="showdrop()" onmouseout="hidedrop()"
+                            style="background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
+                            <li><a class="dropdown-item itemdropdown" onmouseover="showdrop()"
+                                    href="#!SucculentPlant">Succulent plants</a></li>
+                            <li><a class="dropdown-item itemdropdown" onmouseover="showdrop()" href="#!TreeTable">Tree
+                                    to table</a></li>
+                            <li><a class="dropdown-item itemdropdown" onmouseover="showdrop()"
+                                    href="#!GardenPlant">Garden plants</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></li>
@@ -109,14 +113,12 @@
             </div>
         </nav>
     </header>
-    
+
     <div ng-view class="bodymain"></div>
+
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
-       
-        app.config(function ($routeProvider) {
-            // $locationProvider.hashPrefix('');
-            // $locationProvider.html5Mode(true);
+        app.config(function ($routeProvider, $locationProvider) {
             $routeProvider
                 .when("/", {
                     templateUrl: "main/homepage.html"
@@ -139,11 +141,19 @@
                 .when("/faq", {
                     templateUrl: "main/faq.html"
                 })
-                .when("/site-map",{
+                .when("/site-map", {
                     templateUrl: "main/site-map.html"
+                })
+                .when("/GardenPlant", {
+                    templateUrl: "main/GardenPlant.html"
+                })
+                .when("/SucculentPlant", {
+                    templateUrl: "main/SucculentPlant.html"
+                })
+                .when("/TreeTable", {
+                    templateUrl: "main/TreeTable.html"
                 });
-                // $locationProvider.html5Mode(true);
-                // $locationProvider.hashPrefix('');
+                // $locationProvider.html5Mode(true).hashPrefix('!');
         });
     </script>
     <!------------------------Footer--------------------->
@@ -213,6 +223,11 @@
         </div>
     </footer>
 </body>
+<script src="asset/js/angular-route.js"></script>
+<script src="asset/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+<!-- <script src="../asset/fontawesome/fontawesome.min.js"></script> -->
+<!-- <script src="../asset/js/angular.min.js"></script> -->
 
 <!-- JavaScript -->
 <script src="asset/js/homepage.js"></script>

@@ -12,7 +12,8 @@
             "Lotus-stone-chain jade-3.jpg",
             "Lotus-stone-chain jade-4.jpg",
             "Lotus-stone-chain jade-5.jpg"
-        ]
+        ],
+        "Price": "10.00"
     },
     {
         "ID": "2",
@@ -27,7 +28,8 @@
             "ZebraCactus-3.jpg",
             "ZebraCactus-4.jpg",
             "ZebraCactus-5.jpg"
-        ]
+        ],
+        "Price":"50.00"
     },
     {
         "ID": "3",
@@ -42,7 +44,8 @@
             "Crown-of-thorns-3.jpg",
             "Crown-of-thorns-4.jpg",
             "Crown-of-thorns-5.jpg"
-        ]
+        ],
+        "Price":"25.00"
     },
     {
         "ID": "4",
@@ -57,7 +60,8 @@
             "Succulent-3.jpg",
             "Succulent-4.jpg",
             "Succulent-5.jpg"
-        ]
+        ],
+        "Price":"33.00"
     },
     {
         "ID": "5",
@@ -72,7 +76,8 @@
             "lithops-3.jpg",
             "lithops-4.jpg",
             "lithops-5.jpg"
-        ]
+        ],
+        "Price":"100.00"
     },
     {
         "ID": "6",
@@ -87,7 +92,8 @@
             "Money-tree-3.jpg",
             "Money-tree-4.jpg",
             "Money-tree-5.jpg"
-        ]
+        ],
+        "Price":"1000.00"
     },
     {
         "ID": "7",
@@ -102,7 +108,8 @@
             "Peace-Lily-3.jpg",
             "Peace-Lily-4.jpg",
             "Peace-Lily-5.jpg"
-        ]
+        ],
+        "Price":"20.00"
     },
     {
         "ID": "8",
@@ -117,7 +124,8 @@
             "Philodendron-Imperial-Red-3.jpg",
             "Philodendron-Imperial-Red-4.jpg",
             "Philodendron-Imperial-Red-5.jpg"
-        ]
+        ],
+        "Price":"50.00"
     },
     {
         "ID": "9",
@@ -132,7 +140,8 @@
             "Aglaonema-Butterfly-3.jpg",
             "Aglaonema-Butterfly-4.jpg",
             "Aglaonema-Butterfly-5.jpg"
-        ]
+        ],
+        "Price":"45.00"
     },
     {
         "ID": "10",
@@ -147,11 +156,12 @@
             "Chinese-Evergreen-3.jpg",
             "Chinese-Evergreen-4.jpg",
             "Chinese-Evergreen-5.jpg"
-        ]
+        ],
+        "Price":"56.00"
     },
     {
         "ID": "11",
-        "Commonname": "paperflower",
+        "Commonname": "Paperflower",
         "Sciencename": "Bougainvillea glabra",
         "Origin": "Brazil ",
         "Type": "Garden plants",
@@ -162,7 +172,8 @@
             "paperflower-3.jpg",
             "paperflower-4.jpg",
             "paperflower-5.jpg"
-        ]
+        ],
+        "Price":"60.00"
     },
     {
         "ID": "12",
@@ -177,14 +188,15 @@
             "Red-Barringtonia-3.jpg",
             "Red-Barringtonia-4.jpg",
             "Red-Barringtonia-5.jpg"
-        ]
+        ],
+        "Price":"89.00"
     },
     {
         "ID": "13",
         "Commonname": "Crape-myrtle",
         "Sciencename": "Lagerstroemia speciosa",
         "Origin": "India",
-        "Type": "garden plants",
+        "Type": "Garden plants",
         "Describe": "With an average height of 10 to 15m, it is a woody tree. The bark is usually dark brown. Bang Lang has dense foliage, often deciduous in the dry season. The leaves are up to 20cm long, smooth, hard and oval, the petiole is long, often pointed at the top and rounded at the base.\r\nWatering cycle, light: The tree is a water-loving plant, after the tree has stabilized, it should be watered twice a week for good growth. Panax ginseng likes full sun, planted in the shade or under the canopy of other trees, the tree will surely be stunted, the trunk and branches weak and weakened.",
         "Image": [
             "Crape-myrtle-1.jpg",
@@ -192,7 +204,8 @@
             "Crape-myrtle-3.jpg",
             "Crape-myrtle-4.jpg",
             "Crape-myrtle-5.jpg"
-        ]
+        ],
+        "Price":"79.00"
     },
     {
         "ID": "14",
@@ -207,7 +220,8 @@
             "Yellow-Flamboyant-3.jpg",
             "Yellow-Flamboyant-4.jpg",
             "Yellow-Flamboyant-5.jpg"
-        ]
+        ],
+        "Price":"34.00"
     },
     {
         "ID": "15",
@@ -222,6 +236,7 @@
             "Petunia-3.jpg",
             "Petunia-4.jpg",
             "Petunia-5.jpg"
-        ]
+        ],
+        "Price":"59.00"
     }
 ]
