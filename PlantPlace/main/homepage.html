@@ -7,6 +7,36 @@
         background-color: #043011;
     }
 </style> -->
+<script>
+    $(function () {
+	var file = "../asset/json/data.json";
+	$.getJSON(file, function (data) {
+		$.each(data, function (i, field) {
+			var temp = '<div class="product col-12 col-sm-6 col-lg-4">' 
+				+ '<div class="single-product-area mb-50">'
+				+ '<div class="product-img">'
+				+ '<a href="#!/details"><img src="../asset/image/products/'+ field.Image[1] +'" alt=""></a>'
+				+ '<!-- Product Tag -->'
+				+ '<div class="product-meta d-flex">'
+				+ '<a href="#!/cart" class="add-to-cart-btn">Add to cart</a>'
+				+ '</div>'
+				+ '</div>'
+				+ '<!-- Product Info -->'
+				+ '<div class="product-info mt-15 text-center">'
+				+ '<a href="#!/details">'
+				+ '<p>'+ field.Commonname+'</p>'
+				+ '</a>'
+				+ '<h6>$10.99</h6>'
+				+ '</div>'
+				+ '</div>'
+				+ '</div>';
+			$("#all-products").append(temp);
+		});
+		// generateAllProductsHTML(products);
+		// $$$(window).trigger('hashchange');
+	});
+});
+</script>
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
     <div class="carousel-indicators">
@@ -206,67 +236,7 @@
                     </div>
 
                     <!-- Shop Widget -->
-                    <div class="shop-widget best-seller mb-50">
-                        <h4 class="widget-title">Best Seller</h4>
-                        <div class="widget-desc">
-
-                            <!-- Single Best Seller Products -->
-                            <div class="single-best-seller-product d-flex align-items-center">
-                                <div class="product-thumbnail">
-                                    <a href="#!/details" id="imageplant"><img src="../asset/image/products/demo1.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="#!/details" id="nameplant">Cactus Flower</a>
-                                    <p>$10.99</p>
-                                    <div class="ratings">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Best Seller Products -->
-                            <div class="single-best-seller-product d-flex align-items-center">
-                                <div class="product-thumbnail">
-                                    <a href="#!/details"><img src="../asset/image/products/demo1.jpg" alt=""></a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="#!/details">Tulip Flower</a>
-                                    <p>$11.99</p>
-                                    <div class="ratings">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Best Seller Products -->
-                            <div class="single-best-seller-product d-flex align-items-center">
-                                <div class="product-thumbnail">
-                                    <a href="#!/details"><img src="../asset/image/products/demo1.jpg" alt=""></a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="#!/details">Recuerdos Plant</a>
-                                    <p>$9.99</p>
-                                    <div class="ratings">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
