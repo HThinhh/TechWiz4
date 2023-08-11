@@ -412,3 +412,14 @@ img {
 .single_product_desc .products--meta p span:last-child a:hover {
     color: #70c745;
 }
+
+.btn-cart{
+    background-color: #CCFFCC;
+    border-radius: 15px;
+    color: rgb(16, 17, 17);
+    font-weight: 500;
+}
+
+.btn-cart:hover{
+    background-color: #f0ffff;
+}
