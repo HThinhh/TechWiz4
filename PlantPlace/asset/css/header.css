@@ -117,3 +117,8 @@ body{
     color: #fff;
     text-align: center;
 }
+
+.navbar-collapse{
+  align-items: center;
+  padding-right: 10px;
+}
