@@ -26,7 +26,7 @@
 				+ '</div>';
 			$("#all-products").append(temp);
 		});
-
+    $("#product-count").append("<p>Have "+ data.length +" products</p>");
 	});
 });
 
@@ -73,7 +73,7 @@
                 <div class="shop-sorting-data d-flex flex-wrap align-items-center justify-content-between">
                     <!-- Shop Page Count -->
                     <div class="shop-page-count">
-                        <p>Showing 1–9 of 72 results</p>
+                        <p id="product-count"><!-- Product Count --></p>
                     </div>
                     <!-- Search by name -->
                     <div class="search-form">

@@ -13,7 +13,7 @@ const search = () => {
 
 			if(textvalue.toUpperCase().indexOf(searchbox) > -1){
 				product[i].style.display = "";
-			}else{
+			}else{	
 				product[i].style.display = "none";
 			}
 		}
