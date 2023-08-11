@@ -93,12 +93,12 @@
                     <li class="nav-item"><a class="nav-link a" href="#!/contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link a" href="#!/feedback">FeedBack</a></li>
                     <li class="nav-item searchitem">
-                        <form class="d-flex">
+                        <!-- <form class="d-flex">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                                <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                                <input type="text" id="search-item" class="form-control" placeholder="Search" onkeyup="search()">
+                                <button type="button" class="btn btn-secondary"><a href="#/!"><i class="bi-search"></i></a></button>
                             </div>
-                        </form>
+                        </form> -->
                     </li>
                     <li class="nav-item"><a class="nav-link a" href="#!/cart">Cart</a></li>
                 </ul>
@@ -106,7 +106,11 @@
         </nav>
     </header>
     
+<<<<<<< HEAD
     <div ng-view class="bodymain"></div>
+=======
+    <div ng-view class="bodymain" style="padding-top: 20px; padding-bottom: 20px;" id="product-list"></div>
+>>>>>>> 4f5c48a5670cbb80421c81969d2de8daa669e257
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
         app.config(function ($routeProvider) {
