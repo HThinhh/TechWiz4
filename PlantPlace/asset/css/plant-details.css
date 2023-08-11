@@ -260,7 +260,7 @@ img {
 }
 
 .single_product_desc .short_overview p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .single_product_desc .cart--area {
@@ -325,7 +325,7 @@ img {
     width: 30px;
     z-index: 99;
     cursor: pointer;
-    font-size: 8px;
+    font-size: 18px;
     line-height: 46px;
     color: #303030;
 }
@@ -405,7 +405,7 @@ img {
 
 .single_product_desc .products--meta p span:last-child a {
     color: #cccccc;
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 15px;
 }
 
