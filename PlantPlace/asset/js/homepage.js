@@ -2,7 +2,7 @@ $(function () {
 	var file = "../asset/json/data.json";
 	$.getJSON(file, function (data) {
 		$.each(data, function (i, field) {
-			var temp = '<div class="col-12 col-sm-6 col-lg-4">' +
+			var temp = '<div class="col-12 col-sm-6 col-lg-4">'
 				+ '<div class="single-product-area mb-50">'
 				+ '<div class="product-img">'
 				+ '<a href="#!/details"><img src="../asset/image/products/'+ field.Image[1] +'" alt=""></a>'
