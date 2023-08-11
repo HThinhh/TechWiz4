@@ -2,36 +2,35 @@
 
 <script>
     $(function () {
-	var file = "asset/json/data.json";
-	$.getJSON(file, function (data) {
-        var d=0;
-		$.each(data, function (i, field) {
-			var temp = '<div class="product col-12 col-sm-6 col-lg-4">' 
-				+ '<div class="single-product-area mb-50">'
-				+ '<div class="product-img">'
-				+ '<a href="#!/details"><img src="asset/image/products/'+ field.Image[1] +'" alt=""></a>'
-				+ '<!-- Product Tag -->'
-				+ '<div class="product-meta d-flex">'
-				+ '<a href="#!/cart" class="add-to-cart-btn">Add to cart</a>'
-				+ '</div>'
-				+ '</div>'
-				+ '<!-- Product Info -->'
-				+ '<div class="product-info mt-15 text-center">'
-				+ '<a href="#!/details?id='+field.ID+'">'
-				+ '<a href="#!/details">'
-				+ '<p style="font-size: 26px;"><b>'+ field.Commonname+'</b></p>'
-				+ '</a>'
-				+ '<h4>$'+field.Price+'</h4>'
-				+ '</div>'
-				+ '</div>'
-				+ '</div>';
-            d++;
-			$("#all-products").append(temp);
-		});
-        $("#sl").append(d);
-	});
-});
-
+        var file = "asset/json/data.json";
+        $.getJSON(file, function (data) {
+            var d = 0;
+            $.each(data, function (i, field) {
+                var temp = '<div class="product col-12 col-sm-6 col-lg-4">'
+                    + '<div class="single-product-area mb-50">'
+                    + '<div class="product-img">'
+                    + '<a href="#!/details"><img src="asset/image/products/' + field.Image[1] + '" alt=""></a>'
+                    + '<!-- Product Tag -->'
+                    + '<div class="product-meta d-flex">'
+                    + '<a href="#!/cart" class="add-to-cart-btn">Add to cart</a>'
+                    + '</div>'
+                    + '</div>'
+                    + '<!-- Product Info -->'
+                    + '<div class="product-info mt-15 text-center">'
+                    + '<a href="#!/details?id=' + field.ID + '">'
+                    + '<a href="#!/details">'
+                    + '<p style="font-size: 26px;"><b>' + field.Commonname + '</b></p>'
+                    + '</a>'
+                    + '<h4>$' + field.Price + '</h4>'
+                    + '</div>'
+                    + '</div>'
+                    + '</div>';
+                d++;
+                $("#all-products").append(temp);
+            });
+            $("#sl").append(d);
+        });
+    });
 
 </script>
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -57,13 +56,13 @@
         </div>
     </div>
 
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
 </div>
 
 <!-- ##### Shop Area Start ##### -->
@@ -80,7 +79,8 @@
                     <!-- Search by name -->
                     <div class="search-form">
                         <i class="fa fa-search" aria-hidden="true"></i>
-                        <input type="text" name="" id="search-item" placeholder="Search..." onkeyup="search()" autocomplete="off">
+                        <input type="text" name="" id="search-item" placeholder="Search..." onkeyup="search()"
+                            autocomplete="off">
                     </div>
                     <!-- Search by Terms -->
                     <div class="search_by_terms">
