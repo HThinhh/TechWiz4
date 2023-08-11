@@ -3,6 +3,10 @@
     color: black;
 }
 
+::placeholder{
+    font-size: 18px;
+}
+
 .btn-submit {
     margin-top: 5%;
     margin-bottom: 10px;
