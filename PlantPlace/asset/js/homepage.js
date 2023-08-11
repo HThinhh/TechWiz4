@@ -1,14 +1,20 @@
-	var file = "https://62aab6bba62365888bcb89b7.mockapi.io/poc";
-	$.getJSON(file, function( data ) {
-        $.each(data, function(i, field){
-            $(".aaa").append(field + " ");
-        });
+$(function () {
+	var images = [];
+	var file = "../asset/json/data.json";
+	$.getJSON(file, function (data) {
+		$.each(data, function (i, field) {
+			$("#products-list").append(field.ID + " " + field.Commonname + "<br/>");
+			images = field.Image;
+			$("#products-list").append("<img src=\"../asset/image/products/"+ images[1] + "\"> <br/>");
+		});	
 		// generateAllProductsHTML(products);
 		// $$$(window).trigger('hashchange');
 	});
-	// $$$(window).on('hashchange', function(){
-	// 	render(decodeURI(window.location.hash));
-	// });
+});
+
+// $$$(window).on('hashchange', function(){
+// 	render(decodeURI(window.location.hash));
+// });
 // 	/* template */
 // 	function render(url) {
 // 		var temp = url.split('/')[0];
@@ -39,7 +45,7 @@
 // 			window.location.hash = 'product/' + productIndex;
 // 		})
 // 	}
-	
+
 // 	function renderProductsPage(data){
 // 		var page = $$$('.all-products'), p = $$$('.nonP'),
 // 			allProducts = $$$('.all-products .products-list > li');
