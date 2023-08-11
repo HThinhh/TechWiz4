@@ -1,6 +1,7 @@
-*{
+* {
     font-size: 18px;
 }
+
 .carousel {
     padding: 0;
     background-color: #042f11;
@@ -62,14 +63,14 @@
 }
 
 .shop-sorting-data .search_by_terms select {
-    width: 180px;
     height: 40px;
-    color: #51545f;
-    font-size: 16px;
-    background-color: gray;
-    border: 1px solid #ebebeb;
+    background-color: #f5f5f5;
     border-radius: 2px;
-    margin-left: 30px;
+    border: 1px solid #ebebeb;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -290,7 +291,7 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50px;
     flex: 0 0 50px;
-    max-width: 225px;
+    max-width: 500px;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -355,7 +356,8 @@
     visibility: visible;
     opacity: 1;
 }
-.search-form{
+
+.search-form {
     height: 40px;
     background-color: #f5f5f5;
     border-radius: 2px;
@@ -365,7 +367,8 @@
     flex-direction: row;
     align-items: center;
 }
-.search-form input{
+
+.search-form input {
     background-color: #f5f5f5;
     border: none;
     outline: none;
@@ -374,6 +377,7 @@
     font-size: 18px;
     font-weight: 400;
 }
-.search-form i{
+
+.search-form i {
     padding: 0 10px;
 }
