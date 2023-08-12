@@ -14,13 +14,13 @@ img {
 
 .contact--thumbnail {
     position: relative;
-    border-radius: 10%;
+    border-radius: 5%;
     z-index: 1;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .contact--thumbnail img {
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -94,7 +94,9 @@ img {
 .contact-form-area textarea.form-control {
     height: 80px;
 }
-
+input ::placeholder{
+    font-size: 18px;
+}
 .alazea-btn {
     -webkit-transition-duration: 400ms;
     transition-duration: 400ms;
