@@ -9,27 +9,27 @@
                 if (field.ID==temp) {
                         $("#image-product").append(`
                                     <div class="carousel-item active">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[0] +`" title="Product Image">
                                             <img class="d-block w-100" src="asset/image/products/`+ field.Image[0] +`" alt="Banner1">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[1] +`" title="Product Image">
                                             <img class="d-block w-100" src="asset/image/products/`+ field.Image[1] +`" alt="Banner2">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[2] +`" title="Product Image">
                                             <img class="d-block w-100" src="asset/image/products/`+ field.Image[2] +`" alt="Banner3">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[3] +`" title="Product Image">
                                             <img class="d-block w-100" src="asset/image/products/`+ field.Image[3] +`" alt="Banner4">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[4] +`" title="Product Image">
                                             <img class="d-block w-100" src="asset/image/products/`+ field.Image[4] +`" alt="Banner5">
                                         </a>
                                     </div>
@@ -90,6 +90,7 @@
                                 <!-- name -->
                             </h4>
                             <h4 class="price" id="price">
+                                $
                                 <!-- price -->
                             </h4>
                             <script>
