@@ -7,10 +7,10 @@ body{
   background-color: rgb(255, 255, 255);
 }
 header nav{
-  background-color: rgb(145, 247, 114);
+  background-color: #feffef;
 }
 footer{
-  background-color: rgb(145, 247, 114);
+  background-color: #303030;
   box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.619);
 }
 
@@ -36,6 +36,7 @@ footer{
 
 .itemdropdown:hover{
   background-color: rgb(141, 198, 115);
+  border-radius: 20px;
   color: white;
   font-size: 20px;
 }
@@ -66,7 +67,9 @@ body{
   /* border-right: rgb(103, 190, 66) solid 3px; */
   margin: 5px;
 }
-
+.active-menu{
+  color: #fff;
+}
 .a.active {
   color: rgb(255, 255, 255);
 }
@@ -93,11 +96,14 @@ body{
   border-color: #005710; 
 }
 .a:hover{
-  color: rgb(255, 255, 255);
+  background-color: rgb(141, 198, 115);
+  border-radius: 20px;
+  color: #005710;
 }
 
 .fli:hover{
-  background-color: rgb(166, 168, 165);
+  background-color: rgb(141, 198, 115);
+  /* background-color: rgb(166, 168, 165); */
   border-radius: 5px;
 }
 .searchitem:hover{
@@ -121,4 +127,7 @@ body{
 .navbar-collapse{
   align-items: center;
   padding-right: 10px;
+}
+.btn-add{
+  border-radius: 20px;
 }

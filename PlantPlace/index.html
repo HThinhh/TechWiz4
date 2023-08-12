@@ -23,16 +23,17 @@
     <link rel="stylesheet" href="asset/fontawesome/owl.carousel.min.css">
     <link rel="stylesheet" href="asset/css/homepage.css">
     <link rel="stylesheet" href="asset/css/plant-details.css">
-    <link rel="stylesheet" href="asset/css/footer.css" />
     <link rel="stylesheet" href="asset/css/header.css">
+    <link rel="stylesheet" href="asset/css/footer.css" />
+    
     <link rel="stylesheet" href="asset/css/contact.css">
     <link rel="stylesheet" href="asset/css/cart.css">
     <!-- <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="../asset/js/homepage.js"></script> -->
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
         $(function () {
             var navs = document.getElementsByClassName("nav-link");
@@ -94,10 +95,10 @@
                 }
 
             </script>
+            
             <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse" style="flex-grow: 0;">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link a active" href="#"><i class="fa fa-home" aria-hidden="true"
-                                style="font-size: 30px;"></i>Home</a>
+                    <li class="nav-item"><a class="nav-link a active" href="#"><i class="fa fa-home" aria-hidden="true" style="font-size: 30px;"></i>Home</a>
                     <li>
                     <li class="nav-item dropdown x" onmouseout="hidedrop()">
                         <a class=" nav-link dropdown-toggle a" style="color: rgb(64, 124, 37);" role="button"
@@ -105,7 +106,7 @@
                                 style="font-size: 26px;"></i> Plant Category
                         </a>
                         <ul class="dropdown-menu" onmouseover="showdrop()" onmouseout="hidedrop()"
-                            style="background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
+                            style="border-radius: 20px;background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
                             <li><a class="dropdown-item itemdropdown" onmouseover="showdrop()"
                                     href="#!SucculentPlant">Succulent plants</a></li>
                             <li><a class="dropdown-item itemdropdown" onmouseover="showdrop()" href="#!TreeTable">Tree
@@ -135,7 +136,7 @@
             </div>
         </nav>
     </header>
-
+    
     <div ng-view class="bodymain"></div>
 
     <script>
@@ -187,10 +188,10 @@
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2 fli">
-                            <a class="text-dark magin" href="#!/">Home</a>
+                            <a class="magin " style="color: white;" href="#!/">Home</a>
                         </li>
                         <li class="my-2 fli">
-                            <a class="text-dark magin" href="#">PlantPalace</a>
+                            <a class="magin" style="color: white;" href="#">PlantPalace</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item itemdropdown" href="#">Link</a></li>
                                 <li><a class="dropdown-item itemdropdown" href="#">Another link</a></li>
@@ -198,7 +199,7 @@
                             </ul>
                         </li>
                         <li class="my-2 fli">
-                            <a class="text-dark magin" href="#!/cart">Cart</a>
+                            <a class="magin" style="color: white;" href="#!/cart">Cart</a>
                         </li>
                     </ul>
                 </div>
@@ -207,13 +208,13 @@
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2 fli">
-                            <a class="text-dark magin" href="#!/feedback">FeedBack</a>
+                            <a class=" magin" style="color: white;" href="#!/feedback">FeedBack</a>
                         </li>
                         <li class="my-2 fli">
-                            <a class="text-dark magin" href="#!/contact">Contact</a>
+                            <a class=" magin" style="color: white;" href="#!/contact">Contact</a>
                         </li>
                         <li class="my-2 fli">
-                            <a class="text-dark magin" href="#!/faq">FAQ</a>
+                            <a class=" magin" style="color: white;" href="#!/faq">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -222,19 +223,19 @@
                     </p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2 fli">
-                            <a class="footer-lineLink magin" style="color: black;" href="mailto:cantho@cusc.ctu.edu.vn">
+                            <a class="footer-lineLink magin" style="color: white" href="mailto:cantho@cusc.ctu.edu.vn">
                                 <i class="fa fa-envelope-o" style="font-size:24px"></i>
                                 cantho@cusc.ctu.edu.vn
                             </a>
                         </li>
                         <li class="my-2 fli">
-                            <a class="footer-lineLink magin" style="color: black;" href="tel:0948641565">
+                            <a class="footer-lineLink magin" style="color: white" href="tel:0948641565">
                                 <i class="fa fa-phone" style="font-size:24px"></i>
                                 094-864-1565
                             </a>
                         </li>
                         <li class="my-2 fli">
-                            <a class="footer-lineLink magin" style="color: black;">
+                            <a class="footer-lineLink magin" style="color: white">
                                 <i class="fa fa-map-marker" style="font-size:24px" aria-hidden="true"></i>
                                 1 Ly Tu Trong Street, Ninh Kieu District, Can Tho City, Vietnam
                             </a>

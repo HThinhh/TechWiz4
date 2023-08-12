@@ -31,7 +31,7 @@ p {
     font-weight: 400;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
@@ -291,8 +291,8 @@ img {
 }
 
 .single_product_desc .cart .quantity .qty-text {
-    height: 46px;
-    padding: 5px 15px;
+    height: 51px;
+    padding: 0;
     width: 130px;
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
@@ -307,6 +307,10 @@ img {
     .single_product_desc .cart .quantity .qty-text {
         width: 70px;
     }
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .single_product_desc .cart .quantity .qty-minus,
@@ -408,13 +412,13 @@ img {
     color: #70c745;
 }
 
-.btn-cart{
+.btn-cart {
     background-color: #CCFFCC;
     border-radius: 15px;
     color: rgb(16, 17, 17);
     font-weight: 500;
 }
 
-.btn-cart:hover{
+.btn-cart:hover {
     background-color: #f0ffff;
 }
