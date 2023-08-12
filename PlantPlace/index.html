@@ -7,21 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlantPalace</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
     <script src="asset/js/angular.min.js"></script>
     <script src="asset/js/homepage.js"></script>
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" /> -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="asset/fontawesome/font-awesome.min.css">
     <link rel="stylesheet" href="asset/fontawesome/owl.carousel.min.css">
     <link rel="stylesheet" href="asset/css/homepage.css">
@@ -105,7 +102,9 @@
                     <li>
                     <li class="nav-item dropdown x" onmouseout="hidedrop()">
                         <a class=" nav-link dropdown-toggle a" style="color: rgb(64, 124, 37);" role="button"
-                            onmouseover="showdrop()" onclick="changdrop()"><i class="fa fa-leaf" aria-hidden="true" style="font-size: 26px;"></i> Plant Category</a>
+                            onmouseover="showdrop()" onclick="changdrop()"><i class="fa fa-leaf" aria-hidden="true"
+                                style="font-size: 26px;"></i> Plant Category
+                        </a>
                         <ul class="dropdown-menu" onmouseover="showdrop()" onmouseout="hidedrop()"
                             style="border-radius: 20px;background-color: rgb(104,185,65); margin-top: -5px;" id="itemdrop">
                             <li><a class="dropdown-item itemdropdown" onmouseover="showdrop()"
@@ -116,8 +115,10 @@
                                     href="#!GardenPlant">Garden plants</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link a" href="#!/contact"><i class="fa fa-address-book" aria-hidden="true" style="font-size: 26px;"></i> Contact</a></li>
-                    <li class="nav-item"><a class="nav-link a" href="#!/feedback"><i class="fa fa-comment" aria-hidden="true" style="font-size: 30px;"></i> FeedBack</a></li>
+                    <li class="nav-item"><a class="nav-link a" href="#!/contact"><i class="fa fa-address-book"
+                                aria-hidden="true" style="font-size: 26px;"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link a" href="#!/feedback"><i class="fa fa-comment"
+                                aria-hidden="true" style="font-size: 30px;"></i> FeedBack</a></li>
 
                     <li class="nav-item searchitem">
                         <!-- <form class="d-flex">
@@ -127,8 +128,10 @@
                             </div>
                         </form> -->
                     </li>
-                    <li class="nav-item"><a class="nav-link a" href="#!/cart"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 30px;"></i> Cart</a></li>
-                    <li class="nav-item"><a class="nav-link a" href="#!/site-map"><i class="fa fa-sitemap" aria-hidden="true" style="font-size: 30px;"></i> Site Map</a></li>
+                    <li class="nav-item"><a class="nav-link a" href="#!/cart"><i class="fa fa-shopping-cart"
+                                aria-hidden="true" style="font-size: 30px;"></i> Cart</a></li>
+                    <li class="nav-item"><a class="nav-link a" href="#!/site-map"><i class="fa fa-sitemap"
+                                aria-hidden="true" style="font-size: 30px;"></i> Site Map</a></li>
                 </ul>
             </div>
         </nav>
@@ -138,7 +141,7 @@
 
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function ($routeProvider, $locationProvider) {
+        app.config(function ($routeProvider) {
             $routeProvider
                 .when("/", {
                     templateUrl: "main/homepage.html"
@@ -173,7 +176,7 @@
                 .when("/TreeTable", {
                     templateUrl: "main/TreeTable.html"
                 });
-                // $locationProvider.html5Mode(true).hashPrefix('!');
+            // $locationProvider.html5Mode(true).hashPrefix('!');
         });
     </script>
     <!------------------------Footer--------------------->
@@ -243,14 +246,13 @@
         </div>
     </footer>
 </body>
-<script src="asset/js/angular-route.js"></script>
-<script src="asset/bootstrap/js/bootstrap.min.js"></script>
 <!-- <script src="../asset/fontawesome/fontawesome.min.js"></script> -->
 <!-- <script src="../asset/js/angular.min.js"></script> -->
 
 <!-- JavaScript -->
 <script src="asset/js/homepage.js"></script>
-<script src="asset/js/angular-route.js"></script>
+<!-- <script src="asset/js/angular-route.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 <script src="asset/bootstrap/js/bootstrap.min.js"></script>
 
 </html>
