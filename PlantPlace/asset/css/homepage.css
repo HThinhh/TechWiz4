@@ -1,7 +1,9 @@
 * {
     font-size: 18px;
 }
-
+a{
+    text-decoration: none;
+}
 .carousel {
     padding: 0;
     background-color: #042f11;

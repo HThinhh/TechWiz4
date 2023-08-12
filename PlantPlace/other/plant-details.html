@@ -6,58 +6,58 @@
         var file = "asset/json/data.json";
         $.getJSON(file, function (data) {
             $.each(data, function (i, field) {
-                if (field.ID==temp) {
-                        $("#image-product").append(`
+                if (field.ID == temp) {
+                    $("#image-product").append(`
                                     <div class="carousel-item active">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
-                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[0] +`" alt="Banner1">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[0] + `" title="Product Image">
+                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[0] + `" alt="Banner1">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
-                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[1] +`" alt="Banner2">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[1] + `" title="Product Image">
+                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[1] + `" alt="Banner2">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
-                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[2] +`" alt="Banner3">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[2] + `" title="Product Image">
+                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[2] + `" alt="Banner3">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
-                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[3] +`" alt="Banner4">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[3] + `" title="Product Image">
+                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[3] + `" alt="Banner4">
                                         </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <a class="product-img" href="asset/image/plant-details/plant_details_p0.jpg" title="Product Image">
-                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[4] +`" alt="Banner5">
+                                        <a class="product-img" href="asset/image/products/`+ field.Image[4] + `" title="Product Image">
+                                            <img class="d-block w-100" src="asset/image/products/`+ field.Image[4] + `" alt="Banner5">
                                         </a>
                                     </div>
                         `);
-                        $("#small-img-product").append(`
+                    $("#small-img-product").append(`
                                     <li class="active" data-bs-target="#product_details_slider" data-bs-slide-to="0"
-                                        style="background-image: url(asset/image/products/`+ field.Image[0] +`);">
+                                        style="background-image: url(asset/image/products/`+ field.Image[0] + `);">
                                     </li>
                                     <li data-bs-target="#product_details_slider" data-bs-slide-to="1"
-                                        style="background-image: url(asset/image/products/`+ field.Image[1] +`);">
+                                        style="background-image: url(asset/image/products/`+ field.Image[1] + `);">
                                     </li>
                                     <li data-bs-target="#product_details_slider" data-bs-slide-to="2"
-                                        style="background-image: url(asset/image/products/`+ field.Image[2] +`);">
+                                        style="background-image: url(asset/image/products/`+ field.Image[2] + `);">
                                     </li>
                                     <li data-bs-target="#product_details_slider" data-bs-slide-to="3"
-                                        style="background-image: url(asset/image/products/`+ field.Image[3] +`);">
+                                        style="background-image: url(asset/image/products/`+ field.Image[3] + `);">
                                     </li>
                                     <li data-bs-target="#product_details_slider" data-bs-slide-to="4"
-                                        style="background-image: url(asset/image/products/`+ field.Image[4] +`);">
+                                        style="background-image: url(asset/image/products/`+ field.Image[4] + `);">
                                     </li>
                         `);
-                        $("#name-plant").append(field.Commonname);
-                        $("#price").append(field.Price);
-                        $("#description").append(field.Describe);
-                        $("#sciencename").append(field.Sciencename);
-                        $("#origin").append(field.Origin);
-                        $("#type").append(field.Type);
-                    
+                    $("#name-plant").append(field.Commonname);
+                    $("#price").append(field.Price);
+                    $("#description").append(field.Describe);
+                    $("#sciencename").append(field.Sciencename);
+                    $("#origin").append(field.Origin);
+                    $("#type").append(field.Type);
+
                 }
             });
         });
@@ -90,6 +90,7 @@
                                 <!-- name -->
                             </h4>
                             <h4 class="price" id="price">
+                                $
                                 <!-- price -->
                             </h4>
                             <script>
@@ -105,13 +106,14 @@
                                 <form class="cart clearfix d-flex align-items-center" method="post">
                                     <div class="quantity">
                                         <span class="qty-minus"
-                                            onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;"><i
-                                                class="fa fa-minus" aria-hidden="true"></i></span>
-                                        <input type="text" class="qty-text" id="qty" 
+                                            onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;">
+                                            <i class="fa fa-minus" aria-hidden="true"></i></span>
+                                        <input type="number" class="qty-text" id="qty" step="1" min="1" max="12"
                                             name="quantity" value="1">
                                         <span class="qty-plus"
-                                            onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i
-                                                class="fa fa-plus" aria-hidden="true"></i></span>
+                                            onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </span>
                                     </div>
                                     <button type="submit" name="addtocart" value="5" class="btn btn-cart ml-15">
                                         <a href="#!/cart" style="text-decoration: none; color: rgb(101, 162, 173)">
